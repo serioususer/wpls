@@ -175,11 +175,10 @@ INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xb.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ucs/uni-0.def
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ucs/uni-0.def
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xi.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/omstxr.fd
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/omstxr.fd
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xb.tfm
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ucs/uni-32.def
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ucs/uni-32.def
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/t1xr.vf
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxr.tfm
@@ -190,6 +189,9 @@ INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/r
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/t1xb.vf
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmb.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxb.tfm
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/t1xi.vf
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxi.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/t1xb.vf
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmb.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxb.tfm
@@ -205,3 +207,5 @@ INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb

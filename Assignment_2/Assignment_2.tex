@@ -424,16 +424,20 @@ wo auch der Rest mit 0 am kleinsten war. Methodik 1 hatte den zweit kleinsten Re
 \section{Reading assignment}
 
 \subsection{a)} 
-Siehe Seite 36 des Papers sollen damit resource depletion attacks und masquerade attacks abgewährt werden.
+Siehe Seite 36 des Papers sollen damit \textit{resource 
+depletion attacks} und \textit{masquerade attacks} 
+abgewehrt werden.
 
 
 \subsection{b)} 
-Siehe Seite 37 des Papers haben Signalprints die folgenden Eigenschaften:
+Siehe Seite 37 des Papers haben Signalprints die folgenden 
+Eigenschaften:
 
 \begin{itemize}
-	\item Sie sind schwer zu spoofen 
-	\item Sie weisen eine starke Korrelation in Hinblick auf hre physikalische Umgebung auf
-	\item Übere mittlere Zeitdauern variieren sie nur leicht 
+	\item Sie sind schwer zu \textit{spoofen} 
+	\item Sie weisen eine starke Korrelation in Hinblick auf ihre 
+	physikalische Umgebung auf
+	\item Über mittlere Zeitdauern variieren sie nur leicht 
 \end{itemize}
 
 
@@ -441,51 +445,55 @@ Siehe Seite 37 des Papers haben Signalprints die folgenden Eigenschaften:
 
 \subsubsection*{Node Induction}
 Da der Sender nur mithilfe des empfangenen Signalprints,
-welches mit dem Referenz-Signalprints verglichen wird, identifiziert werden kann, muss das voraussetzen, dass das
-Referenz-Signalprint existiert. Falls jedoch eine Node zum ersten mal mit dem Netzwerk interagiert, fehlt logischerweise
-dieses Referenz-Signalprint, was das Identifizieren dieser Node nicht möglich macht. Wenn eine Node sich dem Netzwerk anschließen will, legt sie offen auf welchen Kanälen sie die restlichen Übertragungen senden wird. Die Empfänger stellen sich darauf ein und messen ihre jeweiligen RSSI Werte, die daraufhin über das Netzwerk verteilt werden. 
+welches mit dem Referenz-Signalprints verglichen wird, 
+identifiziert werden kann, muss das voraussetzen, dass 
+das Referenz-Signalprint existiert. Falls jedoch eine 
+Node zum ersten mal mit dem Netzwerk interagiert, fehlt 
+logischerweise dieses Referenz-Signalprint, was das 
+Identifizieren dieser Node nicht möglich macht. 
+Wenn eine Node sich dem Netzwerk anschließen will, legt 
+sie offen auf welchen Kanälen sie die restlichen 
+Übertragungen senden wird. Die Empfänger stellen sich 
+darauf ein und messen ihre jeweiligen RSSI Werte, die 
+daraufhin über das Netzwerk verteilt werden. 
 
 \subsubsection*{Frequent Hello Messages}
----------------ZUSAMMEN FASSEN------------------\\
-As a result of battery
-discharge in a WSN, the transmission power of the
-sensor nodes will reduce. This will cause the RSSI
-values measured at the receiver to reduce. Over time
-the reduction in RSSI values will affect the
-comparison of signalprints used in the identification
-of the sender. The rate of discharge cannot, in
-general, be predicted at the receiver as it depends on
-the load of the sender. To overcome this problem,
-we advocate using frequent “hello” packets.
-Whenever the receiver receives any transmission for
-the sender, it compares the received RSSI value with
-the corresponding RSSI value in the reference
-signalprint. If the receiver notices a fairly large
-difference, it calls for a new signalprint to be
-generated. It has been observed through simulation
-that, if the difference exceeds 1.5 dBm, the receiver
-should call for a new signalprint generation. The
-receiver calculates the RSSI values for each
-transmission that is received. In most cases there will
-already be some transmission ongoing between the
-nodes. However, if there is not enough transmission
-the sender should transmit frequent “hello” packets
-so that the receiver can verify the RSSI values.
+Aufgrund der kontinuierlichen Batterieentladung sinkt 
+die Übertragunsstärke zunehmend, was zur Folge hat, 
+dass die RSSI-Werte mit der Zeit abnehmen. 
+Als Konsequenz wird der Vergleich der RSSI-Werte mit 
+dem Signalprint nach einer gewissen Zeit beeinträchtigt 
+und somit die Identifikation.
+Im Allgemeinen kann die Entladungsrate nicht ohne Weiteres 
+vom Empfänger vorrausgesagt werden, da es von der Ladung 
+des Senders abhängt. Deshalb wird das regelmäßige Versenden 
+von  \glqq hello\grqq \hspace{0.5mm} Packeten empfohlen.
+Immer wenn ein Empfänger eine Übertragung eines Senders erhält, 
+vergleicht dieser dann den empfangenen RSSI-Wert mit dem des 
+Referenz-Signalprints. Erreicht die Differenz eine gewisse 
+Größe, wird die Generierung eines neuen Referenz-Signalprints 
+angefordert. Oft reicht der Verkehr von genuinen Übertragungen 
+aus, aber ist das nicht der Fall müssen \glqq hello\grqq
+\hspace{0.5mm}Packete übertragen werden zur erfolgreichen 
+Verifizierung der RSSI-Werte.
+
 
 \subsubsection*{Data Transmission}
----------------ZUSAMMEN FASSEN------------------\\
-Not every data transmission is
-accompanied with signalprint verification. The
-greater the number of receivers collaborating to
-generate the signalprint, the greater is the reliability
-of the signalprint. At any given time, there may not
-be enough receivers tuned to a particular channel to
-get a sufficiently reliable signalprint. Hence, a two
-step approach is used. In the first step, the network
-looks for some suspicious activity. If such an activity
-is detected, the network tunes the required number of
-receivers to the required channel and attempts to
-generate a signal print.
+Nicht jede Datenübertragung wird mithilfe eines Signalprints 
+verifiziert. Je mehr Empfänger zusammenarbeiten um ein 
+Signalprint zu generieren, desto höher die Verlässlichkeit 
+des Signalprints. Es kann passieren, dass zu einem Zeitpunkt 
+nicht genug Empfänger auf einen bestimmten Kanal eingestimmt 
+sind um einen ausreichend verlässlichen Signalprint zu erhalten. 
+Deshalb wird eine Methodik bestehend aus zwei Schritten verwendet:
+\begin{itemize}
+	\item Das Netzwerk hält Ausschau nach verdächtiger Aktivität
+	\item Falls so eine Aktivität bemerkt wurde, stimmt das Netzwe 
+	eine ausreichende Anzahl an Empfängern auf die entsprechenden 
+	Kanäle ein und ein Signalprint wird erzeugt
+\end{itemize}
+
+
 
 %Als Beispiel für einen Hyperlink übrig gelassen
 \begin{comment}
