@@ -423,62 +423,72 @@ wo auch der Rest mit 0 am kleinsten war. Methodik 1 hatte den zweit kleinsten Re
 
 \section{Reading assignment}
 
-
 \subsection{a)} 
+Siehe Seite 36 des Papers sollen damit resource depletion attacks und masquerade attacks abgewährt werden.
 
-\begin{comment}
-
-
-Im Paper heisst es \glqq In order to combat
-jamming attacks, existing wireless systems typically consider the employment of spread spectrum
-techniques, including DSSS [55], [56] and FHSS
-solutions [57]. To be specific, DSSS employs a PN
-sequence to spread the spectrum of the original
-signal to a wide frequency bandwidth\grqq.\\\\
-Das heisst, dass sogenannte Frequenzspreizung benutzt werden. 
-DSSS benutzt dafür pseudo noise um das original Signal auf eine weite Frequenzbandbreite zu spreizen. Somit wird der Aufwand für einen Angreifer deutlich erhöht.
-\end{comment}
 
 \subsection{b)} 
-\begin{comment}
-Im Paper wird erwähnt \glqq For instance, in
-Fig. 5, we feature two types of industrial standards for
-WMAN, namely WiMAX and LTE\grqq.\\\\
-WiMAX und LTE werden somit erwähnt. 
-Das anfängliche WiMAX, IEEE 802.16, hatte laut den Autoren eine maximale Übetragunsrate von  40 Mb/s. Später, so steht es im Paper, bekam es ein Upgrade, und wurde zu IEEE 802.16m mit den Übetragunsraten von bis zu 1 Gb/s bei stationärem Empfang und  100 Mb/s bei mobilem Empfang. %
-%
-%
-Im Buch %
-%
-\glqq Mobile WiMAX: A Systems Approach to Understanding IEEE 802.16m Radio Access Technology\grqq \hspace{0.3mm} 
-%
-%
-\href{https://www.amazon.com/Mobile-WiMAX-Approach-Understanding-Technology/dp/0128101938}{(Amazon Link)}
-%
-%
-%
-vom Stanford Dozenten Sassan Ahmadi, steht auf Seite 539, dass IEEE 802.16m vom Format 0 eine maximale Abdeckung von 18 km habe. IEEE 802.16m vom Format 1 komme sogar auf 100km.\\
+Siehe Seite 37 des Papers haben Signalprints die folgenden Eigenschaften:
 
+\begin{itemize}
+	\item Sie sind schwer zu spoofen 
+	\item Sie weisen eine starke Korrelation in Hinblick auf hre physikalische Umgebung auf
+	\item Übere mittlere Zeitdauern variieren sie nur leicht 
+\end{itemize}
 
-
-
-
-LTE erreicht laut dieser Quelle %
-%
-%
-\href{https://tu-dresden.de/ing/informatik/ti/vlsi/ressourcen/dateien/dateien_studium/dateien_lehstuhlseminar/vortraege_lehrstuhlseminar/folder-2012-11-09-8491578029/Der-Funkstandard-LTE.pdf?lang=en}{(hier klicken)}%
-%
-%
-\hspace{1.1mm}bis zu 2998,6 Mb/s 
-im Brutto Downlink und bis zu 1497,8 M/s im Brutto Uplink als Release 10 der sogenannten 3GPP-Norm.
-Diese Quelle %
-%
-\href{https://www.pc-magazin.de/ratgeber/das-muessen-sie-ueber-lte-wissen-1277030.html}{(hier klicken)}%
-%
-% 
-\hspace{1mm} behauptet eine \glqq LTE-Basisstation, die mit 800 MHz sendet, besitzte einen Funkzellenradius von bis zu 10 km\grqq.
-\end{comment}
 
 \subsection{c)} 
 
+\subsubsection*{Node Induction}
+Da der Sender nur mithilfe des empfangenen Signalprints,
+welches mit dem Referenz-Signalprints verglichen wird, identifiziert werden kann, muss das voraussetzen, dass das
+Referenz-Signalprint existiert. Falls jedoch eine Node zum ersten mal mit dem Netzwerk interagiert, fehlt logischerweise
+dieses Referenz-Signalprint, was das Identifizieren dieser Node nicht möglich macht. Wenn eine Node sich dem Netzwerk anschließen will, legt sie offen auf welchen Kanälen sie die restlichen Übertragungen senden wird. Die Empfänger stellen sich darauf ein und messen ihre jeweiligen RSSI Werte, die daraufhin über das Netzwerk verteilt werden. 
+
+\subsubsection*{Frequent Hello Messages}
+---------------ZUSAMMEN FASSEN------------------\\
+As a result of battery
+discharge in a WSN, the transmission power of the
+sensor nodes will reduce. This will cause the RSSI
+values measured at the receiver to reduce. Over time
+the reduction in RSSI values will affect the
+comparison of signalprints used in the identification
+of the sender. The rate of discharge cannot, in
+general, be predicted at the receiver as it depends on
+the load of the sender. To overcome this problem,
+we advocate using frequent “hello” packets.
+Whenever the receiver receives any transmission for
+the sender, it compares the received RSSI value with
+the corresponding RSSI value in the reference
+signalprint. If the receiver notices a fairly large
+difference, it calls for a new signalprint to be
+generated. It has been observed through simulation
+that, if the difference exceeds 1.5 dBm, the receiver
+should call for a new signalprint generation. The
+receiver calculates the RSSI values for each
+transmission that is received. In most cases there will
+already be some transmission ongoing between the
+nodes. However, if there is not enough transmission
+the sender should transmit frequent “hello” packets
+so that the receiver can verify the RSSI values.
+
+\subsubsection*{Data Transmission}
+---------------ZUSAMMEN FASSEN------------------\\
+Not every data transmission is
+accompanied with signalprint verification. The
+greater the number of receivers collaborating to
+generate the signalprint, the greater is the reliability
+of the signalprint. At any given time, there may not
+be enough receivers tuned to a particular channel to
+get a sufficiently reliable signalprint. Hence, a two
+step approach is used. In the first step, the network
+looks for some suspicious activity. If such an activity
+is detected, the network tunes the required number of
+receivers to the required channel and attempts to
+generate a signal print.
+
+%Als Beispiel für einen Hyperlink übrig gelassen
+\begin{comment}
+\href{https://www.pc-magazin.de/ratgeber/das-muessen-sie-ueber-lte-wissen-1277030.html}{(hier klicken)}
+\end{comment}
 \end{document}
