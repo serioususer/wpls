@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.6.9)  9 JUN 2020 04:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.6.9)  9 JUN 2020 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -615,21 +615,21 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 49.
 
-<Bilder/Aufgabe1-gesamt-grc.png, id=32, 904.1278pt x 429.10312pt>
+<Bilder/Aufgabe1-gesamt-grc.png, id=28, 904.1278pt x 429.10312pt>
 File: Bilder/Aufgabe1-gesamt-grc.png Graphic file (type png)
 
 <use Bilder/Aufgabe1-gesamt-grc.png>
 Package pdftex.def Info: Bilder/Aufgabe1-gesamt-grc.png used on input line 56.
 (pdftex.def)             Requested size: 411.14526pt x 195.1309pt.
 
-<Bilder/Aufgabe1-gui.png, id=33, 823.57687pt x 552.56438pt>
+<Bilder/Aufgabe1-gui.png, id=29, 823.57687pt x 552.56438pt>
 File: Bilder/Aufgabe1-gui.png Graphic file (type png)
 
 <use Bilder/Aufgabe1-gui.png>
 Package pdftex.def Info: Bilder/Aufgabe1-gui.png used on input line 65.
 (pdftex.def)             Requested size: 411.14526pt x 275.8515pt.
 
-<Bilder/Aufgabe1-properties1.png, id=34, 904.88063pt x 508.90125pt>
+<Bilder/Aufgabe1-properties1.png, id=30, 904.88063pt x 508.90125pt>
 File: Bilder/Aufgabe1-properties1.png Graphic file (type png)
 
 <use Bilder/Aufgabe1-properties1.png>
@@ -637,7 +637,7 @@ Package pdftex.def Info: Bilder/Aufgabe1-properties1.png used on input line 73.
 
 (pdftex.def)             Requested size: 411.14526pt x 231.22429pt.
 
-<Bilder/Aufgabe1-properties2.png, id=35, 903.375pt x 469.755pt>
+<Bilder/Aufgabe1-properties2.png, id=31, 903.375pt x 469.755pt>
 File: Bilder/Aufgabe1-properties2.png Graphic file (type png)
 
 <use Bilder/Aufgabe1-properties2.png>
@@ -645,7 +645,7 @@ Package pdftex.def Info: Bilder/Aufgabe1-properties2.png used on input line 81.
 
 (pdftex.def)             Requested size: 411.14526pt x 213.7962pt.
 
-<Bilder/Aufgabe1-properties3.png, id=36, 903.375pt x 398.99063pt>
+<Bilder/Aufgabe1-properties3.png, id=32, 903.375pt x 398.99063pt>
 File: Bilder/Aufgabe1-properties3.png Graphic file (type png)
 
 <use Bilder/Aufgabe1-properties3.png>
@@ -653,7 +653,7 @@ Package pdftex.def Info: Bilder/Aufgabe1-properties3.png used on input line 89.
 
 (pdftex.def)             Requested size: 411.14526pt x 181.58972pt.
 
-<Bilder/Aufgabe1-properties4.png, id=37, 903.375pt x 398.99063pt>
+<Bilder/Aufgabe1-properties4.png, id=33, 903.375pt x 398.99063pt>
 File: Bilder/Aufgabe1-properties4.png Graphic file (type png)
 
 <use Bilder/Aufgabe1-properties4.png>
@@ -703,7 +703,7 @@ Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 101.
  [3 <./Bilder/Aufgabe1-properties2.png> <./Bilder/Aufgabe1-properties3.png> <./
 Bilder/Aufgabe1-properties4.png>]
-<Bilder/Aufgabe1-properties5.png, id=55, 903.375pt x 398.99063pt>
+<Bilder/Aufgabe1-properties5.png, id=51, 903.375pt x 398.99063pt>
 File: Bilder/Aufgabe1-properties5.png Graphic file (type png)
 
 <use Bilder/Aufgabe1-properties5.png>
@@ -797,89 +797,142 @@ LaTeX Font Info:    Font shape `OMS/txr/bx/n' in size <14.4> not available
 (Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 167.
 
 
-<Bilder/A2_physec.png, id=65, 788.19469pt x 632.3625pt>
+<Bilder/A2_physec.png, id=61, 788.19469pt x 632.3625pt>
 File: Bilder/A2_physec.png Graphic file (type png)
 
 <use Bilder/A2_physec.png>
 Package pdftex.def Info: Bilder/A2_physec.png used on input line 168.
 (pdftex.def)             Requested size: 411.14526pt x 329.8532pt.
 
-<Bilder/A2_kreis.png, id=67, 788.9475pt x 612.03656pt>
+<Bilder/A2_kreis.png, id=63, 788.9475pt x 612.03656pt>
 File: Bilder/A2_kreis.png Graphic file (type png)
 
 <use Bilder/A2_kreis.png>
 Package pdftex.def Info: Bilder/A2_kreis.png used on input line 171.
 (pdftex.def)             Requested size: 411.14526pt x 318.95192pt.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
  [6 <./Bilder/A2_physec.png>]
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 175.
+
+<Bilder/A3_full_frequency_band.png, id=70, 604.2575pt x 448.67625pt>
+File: Bilder/A3_full_frequency_band.png Graphic file (type png)
+
+<use Bilder/A3_full_frequency_band.png>
+Package pdftex.def Info: Bilder/A3_full_frequency_band.png used on input line 1
+76.
+(pdftex.def)             Requested size: 411.14526pt x 305.2875pt.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 178.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 178.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 178.
+ [7 <./Bilder/A2_kreis.png>]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 180.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 180.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 182.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 182.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 182.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 184.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 184.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 184.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 186.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 186.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 186.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 192.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 192.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 192.
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 188.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 197.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 195.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 195.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 195.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 201.
+ [8 <./Bilder/A3_full_frequency_band.png>]
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 204.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 204.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 210.
- [7 <./Bilder/A2_kreis.png>] Excluding 'comment' comment.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
+(babel)             in language  on input line 204.
+ Excluding 'comment' comment.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 262.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 262.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 262.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 262.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 262.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 253.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
- (./Assignment_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
+(babel)             in language  on input line 262.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
+
+(./Assignment_2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
 
 
 Package rerunfilecheck Warning: File `Assignment_2.out' has changed.
@@ -887,32 +940,29 @@ Package rerunfilecheck Warning: File `Assignment_2.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Assignment_2.out':
-(rerunfilecheck)             Before: 95BA7139589D9F305C6D6C1047A95559;363
-(rerunfilecheck)             After:  7F30DBE40499538FD9BD50B0636112A4;310.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
+(rerunfilecheck)             Before: 7F30DBE40499538FD9BD50B0636112A4;310
+(rerunfilecheck)             After:  F355D59DFD4F4FF66CE81FA52145BA04;644.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
  ) 
 Here is how much of TeX's memory you used:
- 10366 strings out of 494860
- 144511 string characters out of 6177603
- 235902 words of memory out of 5000000
- 13476 multiletter control sequences out of 15000+600000
+ 10375 strings out of 494860
+ 144729 string characters out of 6177603
+ 235899 words of memory out of 5000000
+ 13479 multiletter control sequences out of 15000+600000
  33765 words of font info for 65 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  29i,5n,44p,328b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/txfonts/txbsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfo
-nts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment_2.pdf (8 pages, 1295439 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/txbsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
+fonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Assignment_2.pdf (9 pages, 1317568 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
