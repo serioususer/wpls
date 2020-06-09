@@ -53,16 +53,91 @@ $ $
  
 \begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-gesamt-grc.png}
-	\caption{Schaltung in GNR}
+	\includegraphics[width=1.05\textwidth ]
+	{Bilder/Aufgabe1-gesamt-grc.png}
+	\caption{Schaltung in GRC}
 	\label{fig:Label1}
 \end{figure}
 
+Wie in Abbildung~\ref{fig:Label1} zu erkennen ist, wurden 
+verschiedene Bausteine verwendet, die nun aufgezählt werden. 
+Dabei wird auch darauf eingegangen, welche Aufgaben sie bewältigen.
+
+\begin{itemize}
+	\item \textit{Options}: Ermöglicht einzustellen, welche Art von 
+	GUI, hier QT, verwendet werden soll
+	\item \textit{RTL-SDR Source}: Es ermöglicht die Verarbeitung 
+	von empfangenen Signalen, mithilfe von angeschlossener Hardware,
+	hier \textit{HackRF}
+	\item \textit{Variable} (oben und unten): Bequeme Steuerung der 
+	Werte, die in Baublöcke einfließen 
+	\item \textit{Low Pass Filter}: Dient zur Verfeinerung des 
+	Signals durch Filtern. Laut 
+	
+	\href{https://youtu.be/TZmHgIPBLDo?t=1313}
+	{Software Defined Radio with HackRF, Lesson 1: Welcome} 
+
+	ist es Teil der Demodulation. Es dient als Vorbereitung der 
+	eigentlichen Demodulation
+	\item \textit{QT GUI Chooser} (links) und \textit{QT GUI Entry}:
+	Dient zur Senderauswahl, oder genauer, der Frequenzauswahl
+	\item \textit{QT Frequency Sink}: Visuelle Verdeutlichung des 
+	Signals. Es zeigt die Wirkung des \textit{Low Pass Filters}
+	\item \textit{Rational Resampler}: Da der \textit{Low Pass 
+	Filter} nur eine ganzzahlige \textit{Decimation} unterstützt
+	wird zusätzlich dieser \textit{Resampler} benötigt
+	\item \textit{QT GUI Range} und \textit{Multiply Const} (links):
+	Dient der Lautstärke-Einstellung
+	\item \textit{GT GUI Chooser} (rechts), \textit{Multiply Const} 
+	(rechts) und \textit{Wav File Sink}: Regelt die Aufnahme mit 
+	\textit{Record} und \textit{Stop} des Empfangs als auch die 
+	Abspeicherung als \textit{Gruppe\_D.wav} 
+	\item \textit{WBFM Receive}: Der eigentliche Demodulierer laut
+	 
+	\href{https://youtu.be/TZmHgIPBLDo?t=1547}
+	{Software Defined Radio with HackRF, Lesson 1: Welcome}.
+
+	Es formt das Signal in Audio um	
+\end{itemize}
+
+Zusatz:\\
+\textit{Samp\_rate} ist hier 2 Mio. Die 
+\textit{Decimation} beim \textit{Low Pass Filter} ist 10:\\\\
+$\frac{2 000 000}{10}= 200 000$\\\\
+Der \textit{Rational Resampler} hat eine \textit{Interpolation} 
+von 12 und eine \textit{Decimation} von 5:\\~\\
+$200 000 * \frac{12}{5}= 480 000$\\\\
+Der \textit{WBFM Receiver} hat eine \textit{Decimation} von 10:\\\\
+$\frac{480 000}{10}= 48 000$\\~\\
+48kHz ist eine gängige \textit{Sample Rate}, die von nahezu allen 
+\textit{Soundcards} unterstützt wird.\\~\\
+
+Hinweise:
+\begin{itemize}
+	\item Die Hyperlinks oben sind schon mit den passenden 
+	Timestamps versehen
+	\item Der von GRC ausgegebene Python2 Sourcecode 
+	und die entsprechende .grc-Datei können 
+	\href{https://mega.nz/file/Dgwz1TJK#Ij82qKY9ne4je0WJau5FlC7m422H0vi4gds5uQJ7J0s}
+	{<hier>} runtergeladen werden
+\end{itemize} 
+
+Abbildung~\ref{fig:Label2} zeigt die fertige GUI. Oben lässt sich 
+die Lautstärke einstellen. Ist der Slider ganz links, dann ist das 
+Radio stumm. Darunter lässt sich mit \textit{Record} und 
+\textit{Stop} die Aufnahme steuern. Bei \textit{Freq.} kann man 
+die gewünschte Frequenz eingeben. Bei \textit{Senderauswahl} kann
+man zu \textit{CT Radio}, \textit{Radio Bochum} und \textit{1Live}
+schalten. \\\\
+Es folgen danach die Einstellungen der wichtigsten Bauteile, 
+die in  Abbildung~\ref{fig:Label1} zu sehen sind in Form 
+von Screenshots.
 
 
 \begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-gui.png}
+	\includegraphics[width=0.9\textwidth ]
+	{Bilder/Aufgabe1-gui.png}
 	\caption{Fertige GUI}
 	\label{fig:Label2}
 \end{figure}
@@ -70,46 +145,51 @@ $ $
 
 \begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-properties1.png}
+	\includegraphics[width=0.9\textwidth ]
+	{Bilder/Aufgabe1-properties1.png}
 	%\caption{Bytes ASCII kodiert}
-	%\label{fig:Labelx}
+	\label{fig:Label3}
 \end{figure}
 
 
 \begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-properties2.png}
+	\includegraphics[width=0.9\textwidth ]
+	{Bilder/Aufgabe1-properties2.png}
 	%\caption{Bytes ASCII kodiert}
-	%\label{fig:Labelx}
+	\label{fig:Label4}
 \end{figure}
 
 
 \begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-properties3.png}
+	\includegraphics[width=0.9\textwidth ]
+	{Bilder/Aufgabe1-properties3.png}
 	%\caption{Bytes ASCII kodiert}
-	%\label{fig:Labelx}
+	\label{fig:Label5}
 \end{figure}
 
 
 \begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-properties4.png}
+	\includegraphics[width=0.9\textwidth ]
+	{Bilder/Aufgabe1-properties4.png}
 	%\caption{Bytes ASCII kodiert}
-	%\label{fig:Labelx}
+	\label{fig:Label6}
 \end{figure}
 \clearpage
 
 \begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-properties5.png}
+	\includegraphics[width=0.9\textwidth ]
+	{Bilder/Aufgabe1-properties5.png}
 	%\caption{Bytes ASCII kodiert}
-	%\label{fig:Labelx}
+	\label{fig:Label7}
 \end{figure}
 
 
-
 \newpage
+
 \section{Spectrum Sensing}
 \begin{verbatim}
 import scipy.ndimage as img

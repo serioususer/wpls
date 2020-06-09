@@ -12,9 +12,9 @@ INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.st
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/switch.def
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-german/ngerman.ldf
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-german/ngerman.ldf
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-german/ngermanb.ldf
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-german/german.ldf
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-german/german.ldf
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-german/germanb.ldf
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.def
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/txtbabel.def
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/fontenc.sty
@@ -95,6 +95,12 @@ INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfi
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/comment/comment.sty
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/comment/comment.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.cfg
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.cfg
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.aux
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.aux
 OUTPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.aux
@@ -180,31 +186,9 @@ INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Securit
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gesamt-grc.png
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gesamt-grc.png
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gesamt-grc.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/omstxr.fd
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/omstxr.fd
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xi.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/t1xr.vf
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxr.tfm
@@ -215,18 +199,60 @@ INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/r
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/t1xb.vf
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmb.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxb.tfm
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
-INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xi.tfm
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/omstxr.fd
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/omstxr.fd
-INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xb.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/t1xi.vf
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxi.tfm
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/txr.vf
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/txr.vf
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/t1txtt.fd
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/t1txtt.fd
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ucs/uni-32.def
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ucs/uni-32.def
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/txbsy.tfm
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_physec.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_physec.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_physec.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_physec.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_physec.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_kreis.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_kreis.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_kreis.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_kreis.png
+INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_kreis.png
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xb.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/public/txfonts/t1xb.vf
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxptmb.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/rtxb.tfm
@@ -236,6 +262,10 @@ INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Securit
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txbsy.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txbsy.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
