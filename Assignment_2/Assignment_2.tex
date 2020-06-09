@@ -13,7 +13,7 @@
 \usepackage{hyperref}
 \usepackage{comment}
 \usepackage{listings}
-
+\usepackage{pythonhighlight}
 
 \renewcommand{\thesection}{\arabic{section}.} %Nummerierung der Sections anpassen
 \renewcommand{\labelenumi}{\alph{enumi})}  %Nummerierung der Listen anpassen
@@ -180,6 +180,7 @@ von Screenshots.
 \end{figure}
 \clearpage
 
+
 \begin{figure}[hbt!]
 \centering
 	\includegraphics[width=0.9\textwidth ]
@@ -191,7 +192,7 @@ von Screenshots.
 
 \newpage
 \section{Spectrum Spraying}
-\begin{verbatim}
+\begin{python}
 import scipy.ndimage as img
 import numpy as np
 
@@ -219,9 +220,8 @@ def makeBinary(input_filename, output_filename='out.bin'):
 	startbin = int(NFFT/4)
 	fftall[:, startbin:(startbin+image.shape[1])] = ffts
 
-	# Generate random phase vectors for the FFT bins, this is important to
-	# prevent high peaks in the output
-	# The phases won't be visible in the spectrum
+	# Generate random phase vectors for the FFT bins to prevent high peaks 
+	# in the output. The phases won't be visible in the spectrum
 	phases = 2*np.pi*np.random.rand(*fftall.shape)
 	rffts = fftall * np.exp(1j*phases)
 
@@ -241,13 +241,10 @@ def makeBinary(input_filename, output_filename='out.bin'):
 
 	return
 
-
 # Create the Signals
 makeBinary('signal_kreis.png', 'signal_kreis.bin')
 makeBinary('physec.png', 'physec.bin')
-
-\end{verbatim}
-
+\end{python}
 
 \subsection*{• physec}
 
@@ -272,8 +269,12 @@ makeBinary('physec.png', 'physec.bin')
 		\caption{signal\_kreis.bin in Baudline}
 		%\label{fig:Labelx}
 \end{figure}
-\clearpage
 
+\href{https://mega.nz/file/yswnkBzL#qnNt3vmIuQk8qwFkkHqkzqYDX57jLkB02acP9fccV-s}
+{<Hier>} können die Signale heruntergeladen werden
+
+
+\newpage
 \section{Spectrum Sensing}
 
 \subsection*{Komplettes Frequenzband}

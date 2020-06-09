@@ -101,6 +101,12 @@ INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.cfg
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.cfg
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pythonhighlight/pythonhighlight.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pythonhighlight/pythonhighlight.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.aux
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.aux
 OUTPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.aux
@@ -236,9 +242,14 @@ INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Securit
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
 INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/t1txtt.fd
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/txfonts/t1txtt.fd
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xbtt.tfm
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xttsl.tfm
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ucs/uni-32.def
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ucs/uni-32.def
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/txfonts/txbsy.tfm
@@ -267,6 +278,10 @@ INPUT c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Securit
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xbtt.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xbtt.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb
+INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txbsy.pfb

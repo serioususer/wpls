@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.5.19)  9 JUN 2020 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.5.19)  9 JUN 2020 19:27
 entering extended mode
 **"c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.tex"
 ("c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.tex"
@@ -394,7 +394,24 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
- ("c:/Users\Name\Desktop\Vertiefungspraktikum Wireless Physical-Layer Security SS20\wpls\Assignment_2\Assignment_2.aux")
+ ("C:\Users\Name\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pythonhighlight\pythonhighlight.sty"
+Package: pythonhighlight 2017/02/09 python code highlighting; provided by Olivier Verdier <olivier.verdier@gmail.com>
+ ("C:\Users\Name\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ ("C:\Users\Name\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)) ("c:/Users\Name\Desktop\Vertiefungspraktikum Wireless Physical-Layer Security SS20\wpls\Assignment_2\Assignment_2.aux")
 \openout1 = `Assignment_2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 47.
@@ -619,61 +636,61 @@ Package pdftex.def Info: Bilder/Aufgabe1-properties4.png  used on input line 177
 <Bilder/Aufgabe1-properties5.png, id=55, 903.375pt x 398.99063pt>
 File: Bilder/Aufgabe1-properties5.png Graphic file (type png)
 <use Bilder/Aufgabe1-properties5.png>
-Package pdftex.def Info: Bilder/Aufgabe1-properties5.png  used on input line 186.
+Package pdftex.def Info: Bilder/Aufgabe1-properties5.png  used on input line 187.
 (pdftex.def)             Requested size: 435.32419pt x 192.27434pt.
  [5
 
- <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png>]
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 194.
+ <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties5.png>] ("C:\Users\Name\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 195.
  ("C:\Users\Name\AppData\Local\Programs\MiKTeX 2.9\tex\latex\txfonts\t1txtt.fd"
 File: t1txtt.fd 2000/12/15 v3.1
-) [6] ("C:\Users\Name\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
+) ("C:\Users\Name\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 LaTeX Font Info:    Font shape `OMS/txr/bx/n' in size <14.4> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 252.
-<Bilder/A2_physec.png, id=65, 788.19469pt x 632.3625pt>
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 249.
+<Bilder/A2_physec.png, id=60, 788.19469pt x 632.3625pt>
 File: Bilder/A2_physec.png Graphic file (type png)
 <use Bilder/A2_physec.png>
-Package pdftex.def Info: Bilder/A2_physec.png  used on input line 257.
+Package pdftex.def Info: Bilder/A2_physec.png  used on input line 254.
 (pdftex.def)             Requested size: 483.69684pt x 388.066pt.
- [7 <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_physec.png>]
-<Bilder/A2_kreis.png, id=75, 788.9475pt x 612.03656pt>
+ [6] [7 <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_physec.png>]
+<Bilder/A2_kreis.png, id=129, 788.9475pt x 612.03656pt>
 File: Bilder/A2_kreis.png Graphic file (type png)
 <use Bilder/A2_kreis.png>
-Package pdftex.def Info: Bilder/A2_kreis.png  used on input line 271.
+Package pdftex.def Info: Bilder/A2_kreis.png  used on input line 268.
 (pdftex.def)             Requested size: 483.69684pt x 375.23755pt.
  [8 <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A2_kreis.png>]
-<Bilder/A3_full_frequency_band.png, id=82, 604.2575pt x 448.67625pt>
+<Bilder/A3_full_frequency_band.png, id=137, 604.2575pt x 448.67625pt>
 File: Bilder/A3_full_frequency_band.png Graphic file (type png)
 <use Bilder/A3_full_frequency_band.png>
-Package pdftex.def Info: Bilder/A3_full_frequency_band.png  used on input line 284.
+Package pdftex.def Info: Bilder/A3_full_frequency_band.png  used on input line 285.
 (pdftex.def)             Requested size: 483.69684pt x 359.15372pt.
- [9
-
- <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A3_full_frequency_band.png>] [10] Excluding 'comment' comment.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+ [9 <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/A3_full_frequency_band.png>] [10] Excluding 'comment' comment.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
  ("c:/Users\Name\Desktop\Vertiefungspraktikum Wireless Physical-Layer Security SS20\wpls\Assignment_2\Assignment_2.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
 Package rerunfilecheck Info: File `Assignment_2.out' has not changed.
 (rerunfilecheck)             Checksum: EFF88220B2F2403D0C6BA75C6A789C8F;210.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 377.
  ) 
 Here is how much of TeX's memory you used:
- 10469 strings out of 492970
- 150214 string characters out of 3127038
- 250595 words of memory out of 3000000
- 14134 multiletter control sequences out of 15000+200000
- 35081 words of font info for 67 fonts, out of 3000000 for 9000
+ 11714 strings out of 492970
+ 163846 string characters out of 3127038
+ 670256 words of memory out of 3000000
+ 15311 multiletter control sequences out of 15000+200000
+ 36120 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,5n,44p,429b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txbsy.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\Name\Desktop\Vertiefungspraktikum Wireless Physical-Layer Security SS20\wpls\Assignment_2\Assignment_2.pdf" (11 pages, 1338778 bytes).
+ 31i,6n,48p,543b,1611s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xbtt.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txbsy.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:/Users\Name\Desktop\Vertiefungspraktikum Wireless Physical-Layer Security SS20\wpls\Assignment_2\Assignment_2.pdf" (11 pages, 1358753 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
