@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.5.19)  9 JUN 2020 03:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.5.19)  9 JUN 2020 03:30
 entering extended mode
 **"c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.tex"
 ("c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Assignment_2.tex"
@@ -514,7 +514,7 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 File: Bilder/Aufgabe1-gesamt-grc.png Graphic file (type png)
 <use Bilder/Aufgabe1-gesamt-grc.png>
 Package pdftex.def Info: Bilder/Aufgabe1-gesamt-grc.png  used on input line 55.
-(pdftex.def)             Requested size: 338.5863pt x 160.69064pt.
+(pdftex.def)             Requested size: 411.14526pt x 195.1309pt.
 <Bilder/Aufgabe1-gui.png, id=32, 823.57687pt x 552.56438pt>
 File: Bilder/Aufgabe1-gui.png Graphic file (type png)
 <use Bilder/Aufgabe1-gui.png>
@@ -534,12 +534,12 @@ Package pdftex.def Info: Bilder/Aufgabe1-properties2.png  used on input line 80.
 File: Bilder/Aufgabe1-properties3.png Graphic file (type png)
 <use Bilder/Aufgabe1-properties3.png>
 Package pdftex.def Info: Bilder/Aufgabe1-properties3.png  used on input line 88.
-(pdftex.def)             Requested size: 338.5863pt x 149.54196pt.
+(pdftex.def)             Requested size: 411.14526pt x 181.58972pt.
 <Bilder/Aufgabe1-properties4.png, id=36, 903.375pt x 398.99063pt>
 File: Bilder/Aufgabe1-properties4.png Graphic file (type png)
 <use Bilder/Aufgabe1-properties4.png>
 Package pdftex.def Info: Bilder/Aufgabe1-properties4.png  used on input line 96.
-(pdftex.def)             Requested size: 338.5863pt x 149.54196pt.
+(pdftex.def)             Requested size: 411.14526pt x 181.58972pt.
  [1
 
 {C:/Users/Name/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gesamt-grc.png>] [2 <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-gui.png> <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties1.png>] [3 <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties2.png> <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties3.png> <c:/Users/Name/Desktop/Vertiefungspraktikum Wireless Physical-Layer Security SS20/wpls/Assignment_2/Bilder/Aufgabe1-properties4.png>]
@@ -577,7 +577,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  28i,5n,39p,640b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Name/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\Name\Desktop\Vertiefungspraktikum Wireless Physical-Layer Security SS20\wpls\Assignment_2\Assignment_2.pdf" (5 pages, 501828 bytes).
+Output written on "c:/Users\Name\Desktop\Vertiefungspraktikum Wireless Physical-Layer Security SS20\wpls\Assignment_2\Assignment_2.pdf" (5 pages, 501816 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  15 named destinations out of 1000 (max. 500000)
