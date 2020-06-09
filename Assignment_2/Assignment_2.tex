@@ -14,6 +14,7 @@
 \usepackage{comment}
 \usepackage{listings}
 
+
 \renewcommand{\thesection}{\arabic{section}.} %Nummerierung der Sections anpassen
 \renewcommand{\labelenumi}{\alph{enumi})}  %Nummerierung der Listen anpassen
 \titleformat{\section}{\large\bfseries}{\thesection}{0.5em}{} %Format der Section Überschrift ändern
@@ -53,7 +54,7 @@ $ $
  
 \begin{figure}[hbt!]
 \centering
-	\includegraphics[width=1.05\textwidth ]
+	\includegraphics[width=1\textwidth ]
 	{Bilder/Aufgabe1-gesamt-grc.png}
 	\caption{Schaltung in GRC}
 	\label{fig:Label1}
@@ -244,15 +245,40 @@ makeBinary('physec.png','physec.bin')
 
 
 \subsection*{• physec}
-\includegraphics[width=0.85\textwidth ]{Bilder/A2_physec.png}
 
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=1\textwidth ]{Bilder/A2_physec.png}
+		\caption{physec.bin in Baudline}
+		%\label{fig:Labelx}
+\end{figure}
+
+
+
+\newpage
 \subsection*{• kreis}
-\includegraphics[width=0.85\textwidth ]{Bilder/A2_kreis.png}
+%\includegraphics[width=0.85\textwidth ]{Bilder/A2_kreis.png}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=1\textwidth ]{Bilder/A2_kreis.png}
+		\caption{signal\_kreis.bin in Baudline}
+		%\label{fig:Labelx}
+\end{figure}
+\clearpage
 
 \section{Spectrum Sensing}
 
-\subsection*{komplettes Frequenzband}
-\includegraphics[width=0.85\textwidth ]{Bilder/A3_full_frequency_band.png}
+\subsection*{Komplettes Frequenzband}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=1\textwidth ]{Bilder/A3_full_frequency_band.png}
+		\caption{Frequenzband}
+		%\label{fig:Labelx}
+\end{figure}
+
+
 
 \subsection*{Energy Detection}
 
