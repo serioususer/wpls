@@ -47,85 +47,64 @@ $ $
 
 \section{FM-Empfänger}
 
-\begin{comment}  
-%Fürs erste alles auskommentiert was nicht für Assignment %gebraucht wird, man aber als Vorlage/Orientierungshilfe %benutzen kann
 
-
-\subsection*{a)}
-
-
-Zuerst muss inspectrum installiert werden. Als nächstes wird inspectrum gestartet und die mitgegebene file namens SecretSignal.raw geöffnet. %
-%
-Anschließend wird das Programm mit der rechten Maus-Taste angeklickt: Add derived plot -> Add sample plot.
-%
-Eine horizontale \glqq Spannweite\grqq \hspace{0.5mm} öffnet sich. Es muss entsprechend mit der Maus angepasst werden. %
-% 
-Es ist bekannt, dass  Amplitude-Shift Keying, abgekürzt ASK als digitale Modulationsart verwendet wurde. Entsprechend werden Nullen und Einsen zugewiesen, siehe Abbildung~\ref{fig:YourLabe3}.
-%
-Darüber hinaus ist bekannt, dass die Nachricht mit der Präambel 0x55 anfängt, welche nicht teil der eigentlichen Nachricht ist. %
-%
-Danach wird in Bytes aufgeteilt und mit ASCII kodiert.
-
-
-\subsection*{b)}
-
-Die Nachricht besteht aus dem wiederholten String \glqq Money4Physec\grqq. Abfolge: 
-0x55, 0x4D, 0x6F, 0x6E, 0x65, 0x79, 0x34, 0x50, 0x68, 0x79, 0x73, 0x65, 0x63, 0x55, 0x4D und so weiter... \\
-
-
-\begin{figure}[ht!]
-\centering
-	\includegraphics[width=0.77\textwidth ]{images_files/ascii-table.png}
-	\caption{\href{https://www.sciencebuddies.org/science-fair-projects/references/ascii-table}{Quelle: Hier klicken}}
-	\label{fig:YourLabel}
-	
-\end{figure}
-
-
-\newpage
-
-
-\begin{center}
-Diese Tabelle weist jedem Byte die entsprechende ASCII Kodierung zu:
-
-\end{center}
 
  
-\begin{figure}[ht!]
+\begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.7\textwidth ]{images_files/Matrix_Nachricht.png}
-	\caption{Tabelle 2}
-	\label{fig:YourLabe2}
-\end{figure}
- 
-
-
-\newpage
-Diese zwei Screenshots zeigen wie der Anfang vom Signal mithilfe von inspectrum analysiert aussieht. Farbige Kodierung sowie Umrandungen wurden hinterher selbst hinzugefügt.\\~\\
-
-\begin{figure}[ht!]
-\centering
-	\includegraphics[width=0.85\textwidth ]{images_files/Aufgabe1_geschnitten.png}
-	\caption{Bits und Bytes}
-	\label{fig:YourLabe3}
+	\includegraphics[width=0.7\textwidth ]{Bilder/Aufgabe1-gesamt-grc.png}
+	\caption{Schaltung in GNR}
+	\label{fig:Label1}
 \end{figure}
 
-\begin{figure}[ht!]
+
+
+\begin{figure}[hbt!]
 \centering
-	\includegraphics[width=0.85\textwidth ]{images_files/Aufgabe1-Demoduliert.png}
-	\caption{Bytes ASCII kodiert}
-	%\label{fig:YourLabe5}
+	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-gui.png}
+	\caption{Fertige GUI}
+	\label{fig:Label2}
 \end{figure}
 
-\newpage
-Man erkennt, dass sich die Nachricht wiederholt.
-\begin{figure}[ht!]
+
+\begin{figure}[hbt!]
 \centering
-	\includegraphics[width=1.04\textwidth ]{images_files/Aufgabe1-ganz.png}
-	\caption{Gesamte Nachricht}
-	%\label{fig:YourLabe5}
+	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-properties1.png}
+	%\caption{Bytes ASCII kodiert}
+	%\label{fig:Labelx}
 \end{figure}
-\end{comment}
+
+
+\begin{figure}[hbt!]
+\centering
+	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-properties2.png}
+	%\caption{Bytes ASCII kodiert}
+	%\label{fig:Labelx}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+\centering
+	\includegraphics[width=0.7\textwidth ]{Bilder/Aufgabe1-properties3.png}
+	%\caption{Bytes ASCII kodiert}
+	%\label{fig:Labelx}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+\centering
+	\includegraphics[width=0.7\textwidth ]{Bilder/Aufgabe1-properties4.png}
+	%\caption{Bytes ASCII kodiert}
+	%\label{fig:Labelx}
+\end{figure}
+\clearpage
+
+\begin{figure}[hbt!]
+\centering
+	\includegraphics[width=0.85\textwidth ]{Bilder/Aufgabe1-properties5.png}
+	%\caption{Bytes ASCII kodiert}
+	%\label{fig:Labelx}
+\end{figure}
 
 
 
