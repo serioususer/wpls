@@ -283,6 +283,51 @@ das gesamte Band und durchsucht dieses nach Signalen.
 
  
 \subsection*{Komplettes Frequenzband}
+Verwendeter Algorithmus:\\
+\begin{python}
+from pylab import *
+from rtlsdr import *
+import numpy
+
+# variables
+# full frequency band
+start_freq = int(75e6)
+end_freq = int(1e9)
+
+# alt frequency band
+#start_freq = int(400e6)
+#end_freq = int(500e6)
+# 186 television broadcasting
+
+# rtlsdr sample rate
+sample_rate = int(2.4e6)
+mid_freq = int((end_freq + start_freq)/2)
+width_freq = int(end_freq-start_freq)
+
+# rtlsdr configuration
+sdr = RtlSdr()
+sdr.sample_rate = sample_rate
+sdr.gain = 'auto'
+sdr.bandwith = 500e3
+
+# create new np array
+all_samples = sdr.read_samples(256*1024)
+
+# scan the frequency band
+for new_freq in range(start_freq, end_freq, sample_rate*2):
+    sdr.center_freq = new_freq + sample_rate
+    samples = sdr.read_samples(256*1024)
+    all_samples = numpy.concatenate((all_samples, samples))
+sdr.close()
+
+# use matplotlib for PSD
+psd(all_samples, NFFT=1024, Fs=width_freq/1e6, Fc=mid_freq/1e6)
+xlabel('Frequency (MHz)')
+ylabel('Relative power (dB)')
+
+show()
+
+\end{python}
 
 \begin{figure}[hbt!]
 	\centering
@@ -295,11 +340,15 @@ das gesamte Band und durchsucht dieses nach Signalen.
 
 
 \subsection*{Energy Detection}
-Bei der Energy Detection müssen wir entscheiden ob das Signal in Klasse A (es wird dargestellt) oder in Klasse B befindet. Der Algorithmus geht jede Frequenz durch und überprüft ob der Treshold überschritten wird. Ist das Signal größer als der Grenzwert kommt das Signal in die Klasse A. Am Ende wird das Ergebnis dargestellt.
+Bei der Energy Detection müssen wir entscheiden ob das Signal 
+in Klasse A (es wird dargestellt) oder in Klasse B befindet. 
+Der Algorithmus geht jede Frequenz durch und überprüft ob der
+Treshold überschritten wird. Ist das Signal größer als der 
+Grenzwert; kommt das Signal in die Klasse A. Am Ende wird das
+Ergebnis dargestellt.
 
-
+\newpage
 \subsection*{Signale}
-
 
 \begin{figure}[hbt!]
 	\centering
@@ -334,7 +383,7 @@ von \textit{qspectrumanalyzer} gescannt.
 Wie in den Abbildungen~\ref{fig:Label3} und ~\ref{fig:Label4}
 erkennbar ist, sind die Peaks bei \textit{RTL-SDR} deutlich 
 höher auf der Y-Achse. Außerdem sind in diesem Messbereich bei
-\textit{RTL-SDR} einige etwa gleich große\textit{Slots} 
+\textit{RTL-SDR} einige etwa gleich große \textit{Slots} 
 vermerkbar. Bei \textit{HackRF} ist dieses Verhalten in der 
 jeweiligen Messungnicht beobachtbar, als auch bei 
 wiederholten Messungen. Nicht nur die Peaks, sondern auch das 
