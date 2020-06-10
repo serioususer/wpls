@@ -291,23 +291,28 @@ makeBinary('physec.png', 'physec.bin')
 \subsection*{Energy Detection}
 
 \subsection*{Signale}
+
+
 \begin{figure}[hbt!]
 	\centering
 		\includegraphics[width=1\textwidth ]
 		{Bilder/a3_ukw.png}
-		\caption{erkannte Radiosignale beim Spectrum Scan}
+		\caption{Erkannte Radiosignale beim Spectrum Scan}
 		%\label{fig:Labelx}
 \end{figure}
+\clearpage
 
 \subsection*{Unterschied zwischen RTL-SDR und HackRF}
-Es wurde der UKW-Bereich zwischen 80mHz und 120mHz mit Hilfe von \textit{qspectrumanalyzer} gescannt.
+
+Es wurde der UKW-Bereich zwischen 80 MHz und 120 MHz mithilfe 
+von \textit{qspectrumanalyzer} gescannt.
 
 \begin{figure}[hbt!]
 	\centering
 		\includegraphics[width=1\textwidth ]
 		{Bilder/a3_hackrf.jpg}
 		\caption{HackRF}
-		%\label{fig:Labelx}
+		\label{fig:Label3}
 \end{figure}
 
 \begin{figure}[hbt!]
@@ -315,8 +320,20 @@ Es wurde der UKW-Bereich zwischen 80mHz und 120mHz mit Hilfe von \textit{qspectr
 		\includegraphics[width=1\textwidth ]
 		{Bilder/a3_rtl_sdr.jpg}
 		\caption{RTL-SDR}
-		%\label{fig:Labelx}
+		\label{fig:Label4}
 \end{figure}
+
+Wie in den Abbildungen~\ref{fig:Label3} und ~\ref{fig:Label4}
+erkennbar ist, sind die Peaks bei \textit{RTL-SDR} deutlich 
+höher auf der Y-Achse. Außerdem sind in diesem Messbereich bei
+\textit{RTL-SDR} einige etwa gleich große\textit{Slots} 
+vermerkbar. Bei \textit{HackRF} ist dieses Verhalten nicht 
+beobachtbar in der jeweiligen Messung, als auch bei 
+wiederholten Messungen. Nicht nur die Peaks, sondern auch das 
+Grundlevel hat bei \textit{RTL-SDR} in der Abbildung 
+~\ref{fig:Label4} wesentlich mehr Leistung.
+
+
 \newpage
 \section{Reading assignment}
 
