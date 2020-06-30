@@ -50,26 +50,25 @@ $ $
 
 \section{Implementierung Pearson Correlation}
 
+
+Die Aufgabenstellung ist, die in Abbildung~\ref{fig:Label1}
+abgebildete Formel in einem vorgegeben Python-Code als Funktion 
+\textit{correlation(X, Y)} zu implementieren, sodass es von einem 
+mitgegeben Framework fehlerlos getestet werden kann. 
+Die vollständige \textit{exercise3.py} kann  
+\href{https://mega.nz/file/7gwx0BwR#dwkLdHX7AglZKYwp9poGQ-tEL20GtaqFy8LoT4TtV_g}
+{hier} 
+heruntergeladen werden.
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=1\textwidth ]
+		{Bilder/a2-pearson-formel.png}
+		\caption{Auszug aus dem Assignment}
+		\label{fig:Label1}
+\end{figure}
+
 \begin{python}
-#!/usr/bin/env python2
-# -*- coding: UTF-8 -*-
-
-##############################################
-##############################################
-##   PhySec-Praktikum Framework 2019        ##
-##   Authors: Jan Zimmer                    ##
-##            Jeremy Brauer                 ##
-##                                          ##
-##   Students:   <Daniel Pantjuskin-Moos>   ##
-##               <108013248222>             ##
-##               <Vincent Koenig>           ##
-##   Student-ID: <108011232630>             ##
-##                                          ##
-##   DO ONLY CHANGE MARKED FUNCTION BODIES  ##
-##                                          ##
-##############################################
-##############################################
-
 
 import utils
 import numpy
@@ -77,56 +76,44 @@ import numpy
 """
 Excersise 3:
 Implement the Pearson correlation coefficient.
-Do NOT use any given function for standard-deviation or mean-value but implement them by yourself.
+Do NOT use any given function for standard-deviation 
+or mean-value but implement them by yourself.
 
 X, Y are given as lists.
 
-Blockwise application is done outside so please use the whole vectors at once.
+Blockwise application is done outside so please use the 
+whole vectors at once.
 """
 
-# Pearson Korrelation nur bestimmbar, wenn die Vektoren gleich lang sind
+
 def correlation(X, Y):
-    mean_x = numpy.mean(X) # Arithmetisches Mittel von Vektor X
-    mean_y = numpy.mean(Y) # Arithmetisches Mittel von Vektor Y
+    mean_x = numpy.mean(X) # Mittel Vektor X
+    mean_y = numpy.mean(Y) # Mittel Vektor Y
 
-    zaehler = 0
-    sum1 = 0 # Summe von i=0 bis n-1 von (x[i]-mean_x)^2
-    sum2 = 0 # Summe von i=0 bis n-1 von (y[i]-mean_y)^2
+    numerator = 0 # zaehler
+    denominator_x = 0 # der X beinhaltene Faktor im Nenner
+    denominator_y = 0 # der Y beinhaltene Faktor im Nenner
 
+    # Falls Vektoren unterschiedlich lang sind
     if len(X) != len(Y):
-        raise Exception("Fehler: Vektoren unterschiedlich lang!\n")
-
+        raise Exception("Length not equal!\n")
 
     for i in range(len(X)):
-        zaehler += (X[i] - mean_x)*(Y[i] - mean_y)
-        sum1 += (X[i]-mean_x)*(X[i]-mean_x) 
-        sum2 += (Y[i]-mean_y)*(Y[i]-mean_y) 
+        numerator += (X[i] - mean_x)*(Y[i] - mean_y)
+        denominator_x += (X[i]-mean_x)*(X[i]-mean_x)
+        denominator_y += (Y[i]-mean_y)*(Y[i]-mean_y)
 
-    nenner = numpy.sqrt(sum1*sum2)
+    denominator = numpy.sqrt(denominator_x * denominator_y)
 
-    try:
-        pearson = zaehler/nenner
-    except ZeroDivisionError: # Falls Nenner = 0
-        return -999 
-    
+    # Falls Nenner=0, dann wird der jeweilige Eintrag ignoriert
+    # und wird somit auch nicht in die Skizzen eingetragen
+    if denominator == 0:
+        return float('nan')
+
+    pearson = numerator/denominator
+
     return pearson
-
-
-
-"""
-Example mean-quantizer.
-"""
-
-
-# A, B, E are lists. Args is not used here but might be necessary when it comes to Q1 and Q2.
-def quant0(A, B, E, args):
-    # Q maps to 1 if x>t. Otherwise Q maps to 0.
-    def Q(x, t): return 1 if x > t else 0
-    bA = map(Q, A, [numpy.mean(A)
-                    for i in range(len(A))])  # bA[i]=Q(A[i], mean(A))
-    bB = map(Q, B, [numpy.mean(B) for i in range(len(B))])
-    bE = map(Q, E, [numpy.mean(E) for i in range(len(E))])
-    return bA, bB, bE
+    # return utils.not_yet_implemented("Correlation")
 
 \end{python}
 
