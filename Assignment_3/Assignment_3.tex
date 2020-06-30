@@ -62,7 +62,7 @@ heruntergeladen werden.
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=1\textwidth ]
+		\includegraphics[width=0.8\textwidth ]
 		{Bilder/a2-pearson-formel.png}
 		\caption{Auszug aus dem Assignment}
 		\label{fig:Label1}
@@ -117,7 +117,264 @@ def correlation(X, Y):
 
 \end{python}
 
+
+\newpage
 \section{Auswertung}
+
+Die Messproben wurden mit 74 verschiedenen Tests analysiert. Die Testergebnisse 
+und die dazugehörigen Befehle können 
+\href{https://mega.nz/file/rg4HzTJB#4DSJFln2TZiz9BZ_8xZObXRsGiheQ3Otaf_7wMUAqTQ}
+{hier} 
+heruntergeladen werden. Zuerst beschreiben mit römischen Zahlen nummerierte
+Abschnitte, welche Auffälligkeiten die dazugehörigen Teilaufgaben aus
+Ausufgabe 1 aufweisen. Danach werden die allgemeinen Fragen aus der 
+Aufgabenstellung zu Aufgabe 3 beantwortet.
+
+
+\subsection*{Hinweis zu den Tabellen}
+
+Alle Fälle werden ignoriert, bei denen die Nenner bei der 
+Berechnung der Pearson Korrelationen gleich Null sind. 
+Bei der Bestimmung der Mittel und Mediane wurden von allen 
+Korrelationen die Beträge gebildet. Es wird auf vier 
+Nachkommastellen gerundet.
+
+
+\subsection*{\textit{i)}}
+
+
+Alice sendet an Bob :\\~\\
+
+
+\Large
+\begin{tabular}{ |p{3cm}|||p{3cm}|p{3cm}||p{3cm}|p{3cm}|}
+    \hline
+    \multicolumn{5}{|c|}{Teilaufgabe 1: $A\rightarrow B$} \\
+    \hline
+    Blockgröße & Mittel Bob & Median Bob & Mittel Eve & Median Eve\\
+    \hline
+    \hspace{3.2mm}30 & 0.2290 & 0.1756 & 0.1798 & 0.1428\\
+    100 & 0.2219 & 0.1848 & 0.1341 & 0.1053\\
+    200 & 0.2401 & 0.2377 & 0.0946 & 0.0748\\
+    250 & 0.2591 & 0.2328 & 0.1495 & 0.1260\\
+    300 & 0.2791 & 0.2108 & 0.1784 & 0.1130\\
+    \hline
+\end{tabular}
+\\[0.7cm]\\
+\normalsize
+
+Es fällt auf, dass mit zunehmender Blockgröße weniger Nullen in den 
+Nennern auftreten. Bob hat wie zu erwarten, durchgehend größere 
+Korrelationen. Außerdem steigen Bobs Korrelationen in dieser Messung 
+mit der Blockgröße bis mindestens 300. Eves Korrelationen weisen
+bei den verwendeten Blockgrößen eine negativen Buckel auf, mit 
+Tiefpunkt bei Blockgröße 200. Interessant ist auch, dass bei 
+Blockgröße 250 (und 300), der erste Eintrag deutlich höher liegt 
+als die anderen, siehe Abbildungen~\ref{fig:Label2} bis 
+~\ref{fig:Label5}. Außerdem zeichnet sich 
+der Trend ab, dass Eve deutlich mehr negative Korrelationen hat.
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.75\textwidth ]
+		{Bilder/a3-t1-block30-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 30}
+		\label{fig:Label2}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.75\textwidth ]
+		{Bilder/a3-t1-block30-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 30}
+		\label{fig:Label3}
+\end{figure}
+\clearpage
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.75\textwidth ]
+		{Bilder/a3-t1-block250-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 250}
+		\label{fig:Label4}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.75\textwidth ]
+		{Bilder/a3-t1-block250-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 250}
+		\label{fig:Label5}
+\end{figure}
+\clearpage
+
+\subsection*{\textit{ii)}}
+
+Alice sendet an Bob, aber diesmal wird für Bewegung 
+zwischen den Knoten gesorgt:\\~\\
+
+
+\Large
+\begin{tabular}{ |p{3cm}|||p{3cm}|p{3cm}||p{3cm}|p{3cm}|}
+    \hline
+    \multicolumn{5}{|c|}
+    {Teilaufgabe 1: $A\rightarrow B$ mit Bewegung zischen den Knoten}\\
+    \hline
+    Blockgröße & Mittel Bob & Median Bob & Mittel Eve & Median Eve\\
+    \hline
+    \hspace{3.2mm}30 & 0.9807 & 0.9901 & 0.2522 & 0.2626\\
+    
+    200 & 0.9912 & 0.9925 & 0.2365 & 0.2337\\
+   
+    300 & 0.9918 & 0.9932 & 0.2339 & 0.2495\\
+    \hline
+\end{tabular}
+\\[0.7cm]\\
+\normalsize
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.75\textwidth ]
+		{Bilder/a3-t2-block30-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 30 (mit Bewegung)}
+		\label{fig:Label6}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.75\textwidth ]
+		{Bilder/a3-t2-block30-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 30 (mit Bewegung)}
+		\label{fig:Label7}
+\end{figure}
+
+
+
+Auffallend ist , dass der Unterschied nun ohne Probleme mit dem bloßen 
+Auge klar zu erkennen ist. Bobs Korrelationen sind fast durchgehend der 
+eins sehr nahe, wobei Eves Korrelationen besser sind als zuvor und 
+zunehmend mit der Blockgröße seltener im negativen Bereich, aber dennoch
+weit abgeschlagen hinter Bobs Korrelationen.
+
+
+\subsection*{\textit{iii)}: Keine Bewegung}
+
+
+Es treten sehr oft nullen in den Nennern auf die dann mit 
+\textit{nan} gekennzeichnet wurden. Wie zu erwarten war, gab 
+es mit Abstand etwa 20cm deutlich mehr von diesen Fällen. 
+Bei Bob war sogar bei 20cm jedes einzelne Ergebnis wie 
+zum Beispiel in Abbildung~\ref{fig:Label8} erkennbar \textit{nan}
+was zur Folge hat, dass diese skizze leer ist. 
+Umgekehrt gibt es bei plus 10m Abstand deutlich weniger
+\textit{nan}-Fälle. Bob hat da keine einzige leere Skizze.
+Insgesamt ist die Korrelation bei Bob und Eve klar höher.
+Es lässt sich beobachten, dass das Mittel bei Eve +10m bei Blockgröße
+30 mit 0.1686 deutlich größer ist als bei Blockgröße 300 mit 0.0467.
+
+\newpage
+\subsubsection*{Keine Bewgung (20cm)}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a3-t3a-ob-block100-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 100 (20cm)}
+		\label{fig:Label8}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a3-t3a-ob-block100-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 100 (20cm)}
+		\label{fig:Label9}
+\end{figure}
+\clearpage
+
+
+
+\subsubsection*{Keine Bewgung (+10m)}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a3-t3b-ob-block100-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 100 (+10m)}
+		\label{fig:Label10}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a3-t3b-ob-block100-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 100 (+10m)}
+		\label{fig:Label11}
+\end{figure}
+\clearpage
+
+
+
+
+
+
+\subsection*{\textit{iii)}: Mit Bewegung}
+
+Wie zu erwarten war, sind hier die Koorelationen im 
+Vergleich zu den Abbildungen~\ref{fig:Label8} bis
+~\ref{fig:Label11} deutlich größer. Die Korrelation bei 
+Bob ist bei +10m ein bisschen kleiner, bei Eve jedoch ist die Korrelation bei +10m sehr deutlich größer. Reichten die Korrelationen bei Eve bei 20cm von etwa -0.4 bis 0.3 so 
+reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
+~\ref{fig:Label13} und ~\ref{fig:Label15} 
+
+
+
+\subsubsection*{Mit Bewgung (20cm)}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.6\textwidth ]
+		{Bilder/a3-t3a-mb-block100-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 100 (20cm) mit Bewegung}
+		\label{fig:Label12}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.6\textwidth ]
+		{Bilder/a3-t3a-mb-block100-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 100 (20cm) mit Bewegung}
+		\label{fig:Label13}
+\end{figure}
+\clearpage
+
+
+
+\subsubsection*{Mit Bewgung (+10m)}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.6\textwidth ]
+		{Bilder/a3-t3b-mb-block100-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 100 (+10m) mit Bewegung}
+		\label{fig:Label14}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.6\textwidth ]
+		{Bilder/a3-t3b-mb-block100-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 100 (+10m) mit Bewegung}
+		\label{fig:Label15}
+\end{figure}
+
+
+
+
 
 \section{Quantisierer Jana Multibit}
 
