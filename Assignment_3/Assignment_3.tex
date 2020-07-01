@@ -50,6 +50,30 @@ $ $
 
 \section{Messungen}
 
+Die Messungen, mit ursprünglicher und angepasster Beschriftung,
+können
+\href{https://mega.nz/file/i05RXJ7Z#q_9HW7KM_qgKp6tv9JaJFxkw3PNMyVnuvYIgViiNqi8}
+{hier}
+heruntergeladen werden.
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=1\textwidth ]
+		{Bilder/a1.jpg}
+		\caption{Räumliche Verteilung der Knoten für alle Teilaufgaben}
+		\label{fig:Label0}
+\end{figure}
+
+Für den Versuchsaufbau wurde sich an der mitgegebenen 
+\textit{Anleitung\_fuer\_das\_Messsetup.pdf} orientiert. 
+Es wurde die mitgegebenen Ubuntu VM benutzt mit der 
+die Teilaufgaben 1 bis 5 von Aufgabe 1 des Assignments 
+3 abgearbeitet wurden. In Abbildung~\ref{fig:Label0}
+ist die räumliche Verteilung der Knoten zu betrachten
+für die jeweiligen Teilaufgaben.
+
+
+\newpage
 \section{Implementierung Pearson Correlation}
 
 
@@ -60,32 +84,23 @@ es von einem mitgegeben Framework fehlerlos getestet werden
 kann. Die vollständige \textit{exercise3.py} kann  
 \href{https://mega.nz/file/7gwx0BwR#dwkLdHX7AglZKYwp9poGQ-tEL20GtaqFy8LoT4TtV_g}
 {hier} 
-heruntergeladen werden.
+heruntergeladen werden. Der Codeauszug unten enthält nur imports
+statements und die Funktion \textit{correlation(X,Y)}, aber jedoch
+mehr Kommentare. Für das das eigentliche Testen wurde die 
+hochgeladene Datei verwendet.
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=0.8\textwidth ]
+		\includegraphics[width=0.75\textwidth ]
 		{Bilder/a2-pearson-formel.png}
 		\caption{Auszug aus dem Assignment}
 		\label{fig:Label1}
 \end{figure}
-\newpage
-\begin{python}
 
+
+\begin{python}
 import utils
 import numpy
-
-"""
-Excersise 3:
-Implement the Pearson correlation coefficient.
-Do NOT use any given function for standard-deviation 
-or mean-value but implement them by yourself.
-
-X, Y are given as lists.
-
-Blockwise application is done outside so please use the 
-whole vectors at once.
-"""
 
 
 def correlation(X, Y):
@@ -116,7 +131,6 @@ def correlation(X, Y):
 
     return pearson
     # return utils.not_yet_implemented("Correlation")
-
 \end{python}
 
 
@@ -258,26 +272,28 @@ zwischen den Knoten gesorgt:\\~\\
 
 
 Auffallend ist, dass der Unterschied nun ohne Probleme mit dem bloßen 
-Auge klar zu erkennen ist. Bobs Korrelationen sind fast durchgehend der 
-eins sehr nahe, wobei Eves Korrelationen besser sind als zuvor und 
-zunehmend mit der Blockgröße seltener im negativen Bereich, aber dennoch
-weit abgeschlagen hinter Bobs Korrelationen.
+Auge klar zu erkennen ist. Bobs Korrelationen sind fast durchgehend 
+der eins sehr nahe. Eves Korrelationen sind besser als zuvor und 
+sind zunehmend mit der Blockgröße seltener im negativen Bereich, aber 
+dennoch weit abgeschlagen hinter Bobs Werten.
 
 
 \subsection*{\textit{iii)}: Keine Bewegung}
 
 
-Es treten sehr oft nullen in den Nennern auf die dann mit 
+Es treten sehr oft nullen in den Nennern auf, die dann mit 
 \textit{nan} gekennzeichnet wurden. Wie zu erwarten war, gab 
-es mit Abstand etwa 20cm deutlich mehr von diesen Fällen. 
+es mit Abstand von etwa 20cm deutlich mehr von diesen Fällen. 
 Bei Bob war sogar bei 20cm jedes einzelne Ergebnis wie 
-zum Beispiel in Abbildung~\ref{fig:Label8} erkennbar \textit{nan}
-was zur Folge hat, dass diese skizze leer ist. 
-Umgekehrt gibt es bei plus 10m Abstand deutlich weniger
-\textit{nan}-Fälle. Bob hat da keine einzige leere Skizze.
+zum Beispiel in Abbildung~\ref{fig:Label8} erkennbar \textit{nan},
+was zur Folge hat, dass diese Skizze leer ist. Für die anderen 
+getesteten Blockgrößen war das für Bob auch der Fall.
+Umgekehrt gibt es bei plus 10m Abstand deutlich weniger Fälle
+von \textit{nan}. Bob hat da keine einzige leere Skizze.
 Insgesamt ist die Korrelation bei Bob und Eve klar höher.
-Es lässt sich beobachten, dass das Mittel bei Eve +10m bei Blockgröße
-30 mit 0.1686 deutlich größer ist als bei Blockgröße 300 mit 0.0467.
+Es lässt sich beobachten, dass das Mittel bei Eve bei +10m mit 
+Blockgröße 30 mit 0.1686 deutlich größer ist als bei Blockgröße 
+300 mit 0.0467.
 
 \newpage
 \subsubsection*{Keine Bewegung (20cm)}
@@ -331,10 +347,12 @@ Es lässt sich beobachten, dass das Mittel bei Eve +10m bei Blockgröße
 Wie zu erwarten war, sind hier die Korrelationen im 
 Vergleich zu den Abbildungen~\ref{fig:Label8} bis
 ~\ref{fig:Label11} deutlich größer. Die Korrelation bei 
-Bob ist bei +10m ein bisschen kleiner, bei Eve jedoch ist 
-die Korrelation bei +10m sehr deutlich größer. Reichten die 
-Korrelationen bei Eve bei 20cm von etwa -0.4 bis 0.3 so 
-reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
+Bob ist bei +10m mit Bewegung etwa gleich. Bei Eve jedoch ist 
+die Korrelation bei +10m sehr deutlich größer, beides im 
+Vergleich zu 20cm mit Bewegung. Reichten die 
+Korrelationen bei Eve bei 20cm mit Bewegung von etwa 
+-0.4 bis 0.3 so reichen sie bei +10m mit Bewegung von 
+etwa 0.3 bis 0.8, siehe Abbildungen
 ~\ref{fig:Label13} und ~\ref{fig:Label15} 
 
 
@@ -344,7 +362,7 @@ reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=0.6\textwidth ]
+		\includegraphics[width=0.55\textwidth ]
 		{Bilder/a3-t3a-mb-block100-correlation-AB.png}
 		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 100 (20cm) mit Bewegung}
 		\label{fig:Label12}
@@ -352,7 +370,7 @@ reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=0.6\textwidth ]
+		\includegraphics[width=0.55\textwidth ]
 		{Bilder/a3-t3a-mb-block100-correlation-AE.png}
 		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 100 (20cm) mit Bewegung}
 		\label{fig:Label13}
@@ -384,9 +402,9 @@ reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
 \subsection*{\textit{iv)}}
 
 Knoten A wird bei diesen Messungen manuel bewegt. Die Ergebnisse
-sind mit denen von Unterabschnitt \textit{ii)} zu vergleichen mit 
+sind mit denen von Unterabschnitt \textit{ii)} zu vergleichen, mit 
 einem Mittel bei Bob bei Blockgröße 300 von etwa 0.9946 
-beziehungsweise 0.2696 bei Eve (etwa besser).
+beziehungsweise 0.2696 bei Eve (etwas besser).
 
 \begin{figure}[hbt!]
 	\centering
