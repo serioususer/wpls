@@ -4,6 +4,8 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
 \usepackage{geometry}
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -67,7 +69,7 @@ heruntergeladen werden.
 		\caption{Auszug aus dem Assignment}
 		\label{fig:Label1}
 \end{figure}
-
+\newpage
 \begin{python}
 
 import utils
@@ -278,7 +280,7 @@ Es lässt sich beobachten, dass das Mittel bei Eve +10m bei Blockgröße
 30 mit 0.1686 deutlich größer ist als bei Blockgröße 300 mit 0.0467.
 
 \newpage
-\subsubsection*{Keine Bewgung (20cm)}
+\subsubsection*{Keine Bewegung (20cm)}
 
 
 \begin{figure}[hbt!]
@@ -300,7 +302,7 @@ Es lässt sich beobachten, dass das Mittel bei Eve +10m bei Blockgröße
 
 
 
-\subsubsection*{Keine Bewgung (+10m)}
+\subsubsection*{Keine Bewegung (+10m)}
 
 \begin{figure}[hbt!]
 	\centering
@@ -337,7 +339,7 @@ reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
 
 
 
-\subsubsection*{Mit Bewgung (20cm)}
+\subsubsection*{Mit Bewegung (20cm)}
 
 
 \begin{figure}[hbt!]
@@ -359,7 +361,7 @@ reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
 
 
 
-\subsubsection*{Mit Bewgung (+10m)}
+\subsubsection*{Mit Bewegung (+10m)}
 
 
 \begin{figure}[hbt!]
@@ -462,6 +464,7 @@ gegenseitig zu berühren.
 		\label{fig:Label23}
 \end{figure}
 
+
 Bob hat durchgehend eine große Korrelation von
 etwa 0.99, egal ob Blockgröße 30 oder 300. Bei Eve zeichnet sich ein 
 anderes Verhalten ab, siehe Abbildungen~\ref{fig:Label19},~\ref{fig:Label21},
@@ -469,11 +472,61 @@ anderes Verhalten ab, siehe Abbildungen~\ref{fig:Label19},~\ref{fig:Label21},
 wenn man die Beträge von den vielen negativen Werten miteinbezieht, nur 
 bei 0.2596. Bei Blockgröße 300 allerdings ist es 0.4482.
 
+
+\newpage
 \section{Quantisierer Jana Multibit}
+\subsection*{a) Funktionsweise}
+Alice und Bob sammeln RSS Messungen und bestimmen den Bereich der gemessenen Werte(Range of RSS). Anschließend wird \textit{N}, eine Nummer, wieviele Bits pro Messung extrahiert werden können, bestimmt. Danach werden die Messungen in $M = 2^N$ gleich große Intervalle unterteilt. Für jedes dieser Intervalle wird eine N-Bit Zuordnung gewählt. Liegt die Messung nun im Intervall, so wird sie dem \textit{Bitstream} hinzugefügt. Andernfalls muss sie erst korrigiert werden.
 
+\subsection*{b) Pseudocode}
+\begin{algorithm}
+\caption{Pseudocode}
+\begin{algorithmic}[1]
+\State $range = max[RSS] - min[RSS]$
+\State $N \in [0, log_2 RSS]$
+\State $M = 2^N$
+\State $RSS[] \to M$ intervalls $I[]$ of equal size
+\State Choose $N$ bit assignment $\forall$ $M$ intervalls
+\For{$t \to len(RSS[])$}
+\For{$i \to len(I[]$}
+\If{$RSS[t] \in I[i]$}
+\State $bitstream \gets$ bit assignment
+\EndIf
+\EndFor
+\EndFor\\
+\Return $bitstream$
+\end{algorithmic}
+\end{algorithm}
+
+\newpage
 \section{Quantisierer Mathur Suhas}
+\subsection*{a) Funktionsweise}
+Bob und Alice haben beide die gleiche Anzahl an Schätzwerten $h_a$ und $h_b$.\\
+$h_a(j)$ sowie $h_b(j)$ korrespondieren jeweils $\forall j \in [1,len(h_a)]$.\\
+Alice wählt zufällige m-elementige Teilmenge die unter $q_-$ oder über $q_+$ liegt und speichert diese Messungen in einer Liste L ab. Diese Liste wird nun an Bob gesendet.\\
+Bob überprüft nun für jeden Eintrag der Liste, ob seine Messungen $h_b$ korrekt sind. Jeder Eintrag der nicht übereinstimmt wird in eine Liste L' eingetragen. Diese Liste wird dann an Alice zurückgesendet.\\
+Nun können beide mit Hilfe der Liste L' $Q(h_a)$ bzw. $Q(h_+)$ berechnen.
 
+\subsection*{b) Pseudecode}
+\begin{algorithm}
+\caption{Pseudocode}
+\begin{algorithmic}[1]
+\State Alice creates List L
+\State Alice sends L $\to$ Bob
+\State Bob compares L to his List
+\State Bob creates List L'
+\State Bob sends L' $\to$ Alice
+\State Alice and Bobo generate mutual Bitstream
+\end{algorithmic}
+\end{algorithm}
+
+\newpage
 \section{Bonus: Reading Assignment}
+\subsection*{a)}
+Die Autoren sind auf der Suche nach nach einem effizienten und sicheren Algorithmus. Dieser soll den kabellosen Kanal möglichst effizient nutzen und soll Nutzerfreundlich sein, indem er z.b. einen sicheren Schlüssel in kurzer Zeit generieren kann.
+
+\subsection*{b)}
+Es ist eminent, dass der Probing-Algorithmus sich den Kanaleigenschaften anpassen kann, da der \textit{probing process} ansonsten nicht effizient sein kann, wenn der Kanal sich nicht ändert. Das kann bspw. passieren, wenn keine Informationen oder redundate Informationen immer wieder gesendet werden.
 
 
 
