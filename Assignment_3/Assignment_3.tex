@@ -52,10 +52,10 @@ $ $
 
 
 Die Aufgabenstellung ist, die in Abbildung~\ref{fig:Label1}
-abgebildete Formel in einem vorgegeben Python-Code als Funktion 
-\textit{correlation(X, Y)} zu implementieren, sodass es von einem 
-mitgegeben Framework fehlerlos getestet werden kann. 
-Die vollständige \textit{exercise3.py} kann  
+abgebildete Formel in einem vorgegeben Python-Code als 
+Funktion \textit{correlation(X, Y)} zu implementieren, sodass 
+es von einem mitgegeben Framework fehlerlos getestet werden 
+kann. Die vollständige \textit{exercise3.py} kann  
 \href{https://mega.nz/file/7gwx0BwR#dwkLdHX7AglZKYwp9poGQ-tEL20GtaqFy8LoT4TtV_g}
 {hier} 
 heruntergeladen werden.
@@ -121,23 +121,26 @@ def correlation(X, Y):
 \newpage
 \section{Auswertung}
 
-Die Messproben wurden mit 74 verschiedenen Tests analysiert. Die Testergebnisse 
-und die dazugehörigen Befehle können 
+Die Messproben wurden mit 74 verschiedenen Tests analysiert. 
+Die Testergebnisse und die dazugehörigen Befehle können 
 \href{https://mega.nz/file/rg4HzTJB#4DSJFln2TZiz9BZ_8xZObXRsGiheQ3Otaf_7wMUAqTQ}
 {hier} 
-heruntergeladen werden. Zuerst beschreiben mit römischen Zahlen nummerierte
-Abschnitte, welche Auffälligkeiten die dazugehörigen Teilaufgaben aus
-Ausufgabe 1 aufweisen. Danach werden die allgemeinen Fragen aus der 
-Aufgabenstellung zu Aufgabe 3 beantwortet.
+heruntergeladen werden. Zuerst beschreiben mit römischen 
+Zahlen nummerierte Abschnitte, welche Auffälligkeiten die 
+dazugehörigen Teilaufgaben aus Aufgabe 1 aufweisen. Danach 
+werden die allgemeinen Fragen aus der Aufgabenstellung zu 
+Aufgabe 3 beantwortet.
 
 
-\subsection*{Hinweis zu den Tabellen}
+\subsection*{Hinweis zu Mittel und Median}
 
-Alle Fälle werden ignoriert, bei denen die Nenner bei der 
+Alle Werte werden ignoriert bei denen die Nenner bei der 
 Berechnung der Pearson Korrelationen gleich Null sind. 
 Bei der Bestimmung der Mittel und Mediane wurden von allen 
 Korrelationen die Beträge gebildet. Es wird auf vier 
-Nachkommastellen gerundet.
+Nachkommastellen gerundet. In der \textit{correlation(X,Y)}
+werden diese Fälle mit \textit{nan} vermerkt, welche dann 
+in den Skizzen ausgelassen werden.
 
 
 \subsection*{\textit{i)}}
@@ -211,6 +214,7 @@ der Trend ab, dass Eve deutlich mehr negative Korrelationen hat.
 
 \subsection*{\textit{ii)}}
 
+
 Alice sendet an Bob, aber diesmal wird für Bewegung 
 zwischen den Knoten gesorgt:\\~\\
 
@@ -251,7 +255,7 @@ zwischen den Knoten gesorgt:\\~\\
 
 
 
-Auffallend ist , dass der Unterschied nun ohne Probleme mit dem bloßen 
+Auffallend ist, dass der Unterschied nun ohne Probleme mit dem bloßen 
 Auge klar zu erkennen ist. Bobs Korrelationen sind fast durchgehend der 
 eins sehr nahe, wobei Eves Korrelationen besser sind als zuvor und 
 zunehmend mit der Blockgröße seltener im negativen Bereich, aber dennoch
@@ -322,10 +326,12 @@ Es lässt sich beobachten, dass das Mittel bei Eve +10m bei Blockgröße
 
 \subsection*{\textit{iii)}: Mit Bewegung}
 
-Wie zu erwarten war, sind hier die Koorelationen im 
+Wie zu erwarten war, sind hier die Korrelationen im 
 Vergleich zu den Abbildungen~\ref{fig:Label8} bis
 ~\ref{fig:Label11} deutlich größer. Die Korrelation bei 
-Bob ist bei +10m ein bisschen kleiner, bei Eve jedoch ist die Korrelation bei +10m sehr deutlich größer. Reichten die Korrelationen bei Eve bei 20cm von etwa -0.4 bis 0.3 so 
+Bob ist bei +10m ein bisschen kleiner, bei Eve jedoch ist 
+die Korrelation bei +10m sehr deutlich größer. Reichten die 
+Korrelationen bei Eve bei 20cm von etwa -0.4 bis 0.3 so 
 reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
 ~\ref{fig:Label13} und ~\ref{fig:Label15} 
 
@@ -358,7 +364,7 @@ reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=0.6\textwidth ]
+		\includegraphics[width=0.7\textwidth ]
 		{Bilder/a3-t3b-mb-block100-correlation-AB.png}
 		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 100 (+10m) mit Bewegung}
 		\label{fig:Label14}
@@ -366,15 +372,102 @@ reichen sie bei +10m von etwa 0.3 bis 0.8 siehe Abbildungen
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=0.6\textwidth ]
+		\includegraphics[width=0.7\textwidth ]
 		{Bilder/a3-t3b-mb-block100-correlation-AE.png}
 		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 100 (+10m) mit Bewegung}
 		\label{fig:Label15}
 \end{figure}
 
 
+\subsection*{\textit{iv)}}
+
+Knoten A wird bei diesen Messungen manuel bewegt. Die Ergebnisse
+sind mit denen von Unterabschnitt \textit{ii)} zu vergleichen mit 
+einem Mittel bei Bob bei Blockgröße 300 von etwa 0.9946 
+beziehungsweise 0.2696 bei Eve (etwa besser).
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.62\textwidth ]
+		{Bilder/a3-t4-block300-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 300 mit manueller Bewegung von Knoten A}
+		\label{fig:Label16}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.62\textwidth ]
+		{Bilder/a3-t4-block300-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und E mit Blockgröße 300 mit manueller Bewegung von Knoten A}
+		\label{fig:Label17}
+\end{figure}
+\clearpage
 
 
+
+
+\subsection*{\textit{v)}}
+Wie \textit{v)}, aber mit Knoten E sehr nahe an B ohne sich 
+gegenseitig zu berühren.
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.62\textwidth ]
+		{Bilder/a3-t5-block30-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 30 mit manueller Bewegung von Knoten A und E sehr nahe an B}
+		\label{fig:Label18}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.62\textwidth ]
+		{Bilder/a3-t5-block30-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 30 mit manueller Bewegung von Knoten A und E sehr nahe an B}
+		\label{fig:Label19}
+\end{figure}
+\clearpage
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.62\textwidth ]
+		{Bilder/a3-t5-block100-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 100 mit manueller Bewegung von Knoten A und E sehr nahe an B}
+		\label{fig:Label20}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.62\textwidth ]
+		{Bilder/a3-t5-block100-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 100 mit manueller Bewegung von Knoten A und E sehr nahe an B}
+		\label{fig:Label21}
+\end{figure}
+\clearpage
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.62\textwidth ]
+		{Bilder/a3-t5-block300-correlation-AB.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 300 mit manueller Bewegung von Knoten A und E sehr nahe an B}
+		\label{fig:Label22}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.62\textwidth ]
+		{Bilder/a3-t5-block300-correlation-AE.png}
+		\caption{Skizze der Korrelation zwischen A und B mit Blockgröße 300 mit manueller Bewegung von Knoten A und E sehr nahe an B}
+		\label{fig:Label23}
+\end{figure}
+
+Bob hat durchgehend eine große Korrelation von
+etwa 0.99, egal ob Blockgröße 30 oder 300. Bei Eve zeichnet sich ein 
+anderes Verhalten ab, siehe Abbildungen~\ref{fig:Label19},~\ref{fig:Label21},
+~\ref{fig:Label23}. So ist das Mittel bei Eve bei Blockgröße 30, selbst 
+wenn man die Beträge von den vielen negativen Werten miteinbezieht, nur 
+bei 0.2596. Bei Blockgröße 300 allerdings ist es 0.4482.
 
 \section{Quantisierer Jana Multibit}
 
