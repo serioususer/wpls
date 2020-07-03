@@ -141,11 +141,7 @@ Die Messproben wurden mit 74 verschiedenen Tests analysiert.
 Die Testergebnisse und die dazugehörigen Befehle können 
 \href{https://mega.nz/file/rg4HzTJB#4DSJFln2TZiz9BZ_8xZObXRsGiheQ3Otaf_7wMUAqTQ}
 {hier} 
-heruntergeladen werden. Zuerst beschreiben mit römischen 
-Zahlen nummerierte Abschnitte, welche Auffälligkeiten die 
-dazugehörigen Teilaufgaben aus Aufgabe 1 aufweisen. Danach 
-werden die allgemeinen Fragen aus der Aufgabenstellung zu 
-Aufgabe 3 beantwortet.
+heruntergeladen werden.  
 
 
 \subsection*{Hinweis zu Mittel und Median}
@@ -183,7 +179,7 @@ Alice sendet an Bob :\\~\\
 \normalsize
 
 Es fällt auf, dass mit zunehmender Blockgröße weniger Nullen in den 
-Nennern auftreten. Bob hat wie zu erwarten, durchgehend größere 
+Nennern auftreten. Bob hat wie erwartet, durchgehend größere 
 Korrelationen. Außerdem steigen Bobs Korrelationen in dieser Messung 
 mit der Blockgröße bis mindestens 300. Eves Korrelationen weisen
 bei den verwendeten Blockgrößen eine negativen Buckel auf, mit 
@@ -491,6 +487,19 @@ wenn man die Beträge von den vielen negativen Werten miteinbezieht, nur
 bei 0.2596. Bei Blockgröße 300 allerdings ist es 0.4482.
 
 
+\subsection{Resümee}
+
+Wie in zum Beispiel in der Tabelle in \textit{ii)} klar wird, kann die 
+Blockgröße einen großen Einfluss nehmen auf die Ergebnisse. Außerdem 
+kommen viele, hier als \textit{nan} bezeichnete Werte vor, wenn
+eine kleine Blockgröße benutzt wird, insbesondere bei kleiner 
+Entfernung und/oder keiner Bewegung. 
+Darüberhinaus wurde in \textit{iii)} gezeigt, dass Bewegung und
+Entfernung Entropie in die Messungen bringt. Wenn man die Ergebnisse
+aus \textit{i)} berücksichtigt, hat ein Angreifer, Eve, die besten 
+Chancen sich als Bob auszugeben, wenn die Distanz gering ist und 
+möglichst wenig Bewegung zwischen den Knoten stattfindet.
+
 \newpage
 \section{Quantisierer Jana Multibit}
 \subsection*{a) Funktionsweise}
@@ -521,9 +530,15 @@ Alice und Bob sammeln RSS Messungen und bestimmen den Bereich der gemessenen Wer
 \subsection*{a) Funktionsweise}
 Bob und Alice haben beide die gleiche Anzahl an Schätzwerten $h_a$ und $h_b$.\\
 $h_a(j)$ sowie $h_b(j)$ korrespondieren jeweils $\forall j \in [1,len(h_a)]$.\\
-Alice wählt zufällige m-elementige Teilmenge die unter $q_-$ oder über $q_+$ liegt und speichert diese Messungen in einer Liste L ab. Diese Liste wird nun an Bob gesendet.\\
-Bob überprüft nun für jeden Eintrag der Liste, ob seine Messungen $h_b$ korrekt sind. Jeder Eintrag der nicht übereinstimmt wird in eine Liste L' eingetragen. Diese Liste wird dann an Alice zurückgesendet.\\
-Nun können beide mit Hilfe der Liste L' $Q(h_a)$ bzw. $Q(h_+)$ berechnen.
+Alice wählt zufällige m-elementige Teilmenge die unter 
+$q_-$ oder über $q_+$ liegt und speichert diese Messungen 
+in einer Liste L ab. Diese Liste wird nun an Bob gesendet.\\
+Bob überprüft nun für jeden Eintrag der Liste, ob seine 
+Messungen $h_b$ korrekt sind. Jeder Eintrag der nicht 
+übereinstimmt wird in eine Liste L' eingetragen. 
+Diese Liste wird dann an Alice zurückgesendet.\\
+Nun können beide mit Hilfe der Liste L' $Q(h_a)$ 
+beziehungsweise $Q(h_+)$ berechnen.
 
 \subsection*{b) Pseudecode}
 \begin{algorithm}
@@ -541,10 +556,19 @@ Nun können beide mit Hilfe der Liste L' $Q(h_a)$ bzw. $Q(h_+)$ berechnen.
 \newpage
 \section{Bonus: Reading Assignment}
 \subsection*{a)}
-Die Autoren sind auf der Suche nach nach einem effizienten und sicheren Algorithmus. Dieser soll den kabellosen Kanal möglichst effizient nutzen und soll Nutzerfreundlich sein, indem er z.b. einen sicheren Schlüssel in kurzer Zeit generieren kann.
+Die Autoren sind auf der Suche nach nach einem effizienten 
+und sicheren Algorithmus. Dieser soll den kabellosen Kanal 
+möglichst effizient nutzen und soll nutzerfreundlich sein, 
+indem er zum Beispiel einen sicheren Schlüssel in kurzer Zeit
+generieren kann.
 
 \subsection*{b)}
-Es ist eminent, dass der Probing-Algorithmus sich den Kanaleigenschaften anpassen kann, da der \textit{probing process} ansonsten nicht effizient sein kann, wenn der Kanal sich nicht ändert. Das kann bspw. passieren, wenn keine Informationen oder redundate Informationen immer wieder gesendet werden.
+Es ist eminent, dass der Probing-Algorithmus sich den 
+Kanaleigenschaften anpassen kann, da der 
+\textit{probing process} ansonsten nicht effizient sein 
+kann, wenn der Kanal sich nicht ändert. Das kann 
+beispielsweise passieren, wenn keine Informationen 
+oder redundante Informationen immer wieder gesendet werden.
 
 
 
