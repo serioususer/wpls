@@ -1,6 +1,41 @@
 \section{Implementierung Quantisierer}
 
-Hier Aufgabe 2 bearbeiten
-\subsection{Implementierung Jana Multibit}
 
-\subsection{Implementierung Mathur, Suhas}
+\subsection{Implementierung Jana Multibit}
+\begin{python}
+	def JanaMultibit(X):
+		#(i)determine the Range of RSS measurements from the minimum and the maximum measured RSS values
+		x_min = min(X)
+		x_max = max(X)
+
+		#(ii) find N, the number of bits that can be extracted per measurement
+		# N is already implemented
+		N = number_of_bits
+
+		#(iii) divide the Range into m = 2^n equal sized intervals
+		M = 2**N	# M intervals, len(Range) = M+1
+		interval = abs((max(X)-min(X))/float(M)) # interval size
+		
+		Range =[] 	# intervals
+		
+		if interval == 0:	#min=max
+			interval = 1
+
+		while x_min <= x_max:	# fill in
+			Range.append(x_min) 
+			x_min += interval
+
+		#(iv) choose an N bit assignment for each of the M intervals (for example use the Gray code sequence) 
+		bit_assignment = utils.gray_code(N)
+
+		#(v) for each RSS measurement, extract N bits depending on the interval in which the RSS measurement lies. 
+		quantized=[]
+		for x in X:
+			for j in xrange(len(Range) - 1):
+				if Range[j] <= x <= Range[j+1]: # including max and min values
+					quantized.extend(bit_assignment[j])
+					break
+			if len(Range) == 1:	# min=max - only one value
+				quantized.extend(bit_assignment[0])
+		return quantized
+\end{python}

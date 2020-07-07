@@ -1,14 +1,16 @@
 \section{Bit Error Rate}
 
 
-Hier Aufgabe 1 bearbeiten.\\
-Nichts muss importiert werden.\\
-Einfach starten wie gewohnt
-
-\begin{figure}[hbt!]
-	\centering
-		\includegraphics[width=1\textwidth ]
-		{Bilder/Testbild.jpg}
-		\caption{Testbild kann gelöscht werden sobald gesehen}
-		\label{fig:Labelx}
-\end{figure}
+\begin{python}
+def ber(X, Y):
+	hw = 0.0
+	for x,y in len(X):
+		hw += x^y
+	
+	BER = hw/len(X)	# len(X) = len(Y)
+	
+	if 0 <= BER <= 0.5:
+		return BER
+	else:
+		return 1 - BER
+\end{python}
