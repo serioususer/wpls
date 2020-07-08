@@ -16,7 +16,7 @@ python konk_data.py -A 1_ohneBwg_A_B.csv 2_mBwg_A_B.csv 3.a_mBwg_A_B.csv
 
 Die Ausgaben namens \textit{A.csv}, \textit{B.csv} und 
 \textit{E.csv} können
-\href{https://mega.nz/file/Kowh1RIA#iwcg-VO18yAPw0ZCmrv3S2B_1zaaaBSvtC2XgcUiT1g}
+\href{https://mega.nz/file/Kt5xBZAB#WRGFcohI7XJrf5DPk1q67PtrjdRBoHcYXyj7-F8Ai3g}
 {hier} runtergeladen werden.\\~\\
 
 Folgende Befehle wurden zum Testen des Frameworks benutzt.
@@ -28,9 +28,9 @@ python physec_praktikum.py -A A.csv -B B.csv -E E.csv -X 2 -Q 1
 \end{python}
 
 Die Ausgaben des Frameworks können 
-\href{https://mega.nz/file/jlwlQbrK#O-Ak2Kf8Iu3XI6VFsn88HubCuFZHjfDX3dkWF6tEMc0}
+\href{https://mega.nz/file/iooRSRaT#bSVf5SFQHdotoiB_lNudiWK0QEkD0q-4O-qF6iZUipo}
 {hier}
-untergeladen werden.\\
+runtergeladen werden.\\
 
 
 
@@ -64,8 +64,102 @@ so erkennt man merkbare Unterschiede zwischen beiden
 		\caption{\textit{Signalstärkenverlauf}}
 		\label{fig:4.3}
 \end{figure}
+
+\begin{comment}
 Wenn man Abbildung~\ref{fig:4.1} betrachtet, so erkennt man, 
 dass Einflüsse wie Bewegung und Distanz eine große Rolle 
 spielen.\\
 Analysiert man die Unterschiede so wird klar, dass Bewegung
-und größere Distanz einen Angreifer benachteiligen.
+und größere Distanz einen Angreifer benachteiligen.	
+\end{comment}
+
+\newpage
+Als nächstes wurde mit den Ausgaben dieses Befehl getestet.
+\begin{python}
+python konk_data.py -A 1_ohneBwg_A_B.csv 2_mBwg_A_B.csv -B 1_ohneBwg_B_A.csv 
+2_mBwg_B_A.csv -E 1_ohneBwg_E_A.csv 2_mBwg_E_A.csv
+\end{python}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.65\textwidth ]
+		{Bilder/a4-q0-1bis2.png}
+		\caption{\textit{Signalstärkenverlauf}}
+		\label{fig:4.4}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.65\textwidth ]
+		{Bilder/a4-q0-1bis2-1.png}
+		\caption{\textit{quant0}}
+		\label{fig:4.5}
+\end{figure}
+\clearpage
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.65\textwidth ]
+		{Bilder/a4-q1-1bis2-1.png}
+		\caption{\textit{quant1}}
+		\label{fig:4.6}
+\end{figure}
+
+
+\begin{python}
+python konk_data.py -A 3.a_mBwg_A_B.csv 3.a_ohneBwg_A_B.csv 3.b_mBwg_A_B.csv 
+3.b_ohneBwg_A_B.csv  -B 3.a_mBwg_B_A.csv 3.a_ohneBwg_B_A.csv 3.b_mBwg_B_A.csv 
+3.b_ohneBwg_B_A.csv -E 3.a_mBwg_E_A.csv 3.a_ohneBwg_E_A.csv 3.b_mBwg_E_A.csv 
+3.b_ohneBwg_E_A.csv 
+\end{python}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.65\textwidth ]
+		{Bilder/a4-q0-3.png}
+		\caption{\textit{Signalstärkenverlauf}}
+		\label{fig:4.7}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.65\textwidth ]
+		{Bilder/a4-q0-3-1.png}
+		\caption{\textit{quant0}}
+		\label{fig:4.8}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.65\textwidth ]
+		{Bilder/a4-q1-3-1.png}
+		\caption{\textit{quant1}}
+		\label{fig:4.9}
+\end{figure}
+
+\subsubsection*{Resümee: Eavsdropping Attack}
+
+\glqq Gibt es einen Zusammenhang zwischen dem Verwendeten
+Quantisierer und der Stärke des Angreifers?\grqq\\
+
+Wie Abbildungen~\ref{fig:4.4} und ~\ref{fig:4.5} zeigen, 
+bietet der  \textit{quant0} beziehungsweise 
+\textit{mean quantizer} dem Angreifer einen Vorteil.\\
+
+\glqq Welche Rolle spielt die Entfernung des Angreifers 
+zu Alice/Bob\grqq\\
+
+In Abbildungen~\ref{fig:4.8} und ~\ref{fig:4.9} ist klar zu 
+erkennen, dass zunehmende Distanz einen Angreifer 
+benachteiligt.\\
+
+\glqq Welche Rolle spielt die Bewegung im Raum?\grqq\\
+
+Bewegung im Raum benachteiligt den Angreifer. Die 
+Wirkung davon sieht man in Abbildungen~\ref{fig:4.4} 
+und~\ref{fig:4.5}. Abbildung~\ref{fig:4.3} zeigt wie
+enorm der Einfluss von Bewgung auf die Signalstärke ist. 
