@@ -74,7 +74,7 @@ und größere Distanz einen Angreifer benachteiligen.
 \end{comment}
 
 \newpage
-Als nächstes wurde mit den Ausgaben dieses Befehl getestet.
+Als nächstes wurde mit den Ausgaben dieses Befehls getestet.
 \begin{python}
 python konk_data.py -A 1_ohneBwg_A_B.csv 2_mBwg_A_B.csv -B 1_ohneBwg_B_A.csv 
 2_mBwg_B_A.csv -E 1_ohneBwg_E_A.csv 2_mBwg_E_A.csv
@@ -108,6 +108,7 @@ python konk_data.py -A 1_ohneBwg_A_B.csv 2_mBwg_A_B.csv -B 1_ohneBwg_B_A.csv
 \end{figure}
 
 
+Anschließend wurde mit den Ausgaben dieses Befehls getestet.
 \begin{python}
 python konk_data.py -A 3.a_mBwg_A_B.csv 3.a_ohneBwg_A_B.csv 3.b_mBwg_A_B.csv 
 3.b_ohneBwg_A_B.csv  -B 3.a_mBwg_B_A.csv 3.a_ohneBwg_B_A.csv 3.b_mBwg_B_A.csv 
@@ -161,5 +162,99 @@ benachteiligt.\\
 
 Bewegung im Raum benachteiligt den Angreifer. Die 
 Wirkung davon sieht man in Abbildungen~\ref{fig:4.4} 
-und~\ref{fig:4.5}. Abbildung~\ref{fig:4.3} zeigt wie
-enorm der Einfluss von Bewgung auf die Signalstärke ist. 
+und~\ref{fig:4.5}.
+
+
+\subsection*{Repetition Attack}
+Wie in der Vorlesung erwähnt wurde, ist es möglich
+von einem Angreifer zyklische Bewegungen
+auszunutzen, siehe Beispiel Modelleisenbahn.
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=1\textwidth ]
+		{Bilder/a4-2.png}
+		\caption{\textit{Signalstärkenverlauf}}
+		\label{fig:4.10}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-2-q0.png}
+		\caption{\textit{quant0}}
+		\label{fig:4.11}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-2-q1.png}
+		\caption{\textit{quant1}}
+		\label{fig:4.12}
+\end{figure}
+\clearpage
+
+Es sind Muster zu erkennen, wobei 
+Eves Muster eigentlich noch gleichmäßiger wäre,
+aber die Messbedingungen waren nicht ideal.\\[3mm]
+Es gibt erkennbare Unterschiede zwischen den
+Quantisierern, wobei Eve \textit{quant0} bevorzugen
+würde. Zyklische Bewegungen scheinen tatsächlich 
+ausnutzbar zu sein für einen Angreifer. Eve muss dabei
+unter anderem die Periode richtig schätzen.
+
+
+\subsection*{Prediction Attack}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=1\textwidth ]
+		{Bilder/a4-3.png}
+		\caption{\textit{Signalstärkenverlauf}}
+		\label{fig:4.13}
+\end{figure}
+
+Betrachtet man Abbildungen~\ref{fig:4.14} und 
+~\ref{fig:4.15}
+kann man zum Entschluss kommen, dass Eve zumindest 
+bei \textit{quant0} diese Attacke nutzen könnte um die 
+Entropie zwischen Alice und Bob möglichst weit zu 
+reduzieren. Alternativ könnte man diesen Angriff als 
+\textit{denial-of-service-Attacke} nutzen um eine
+erfolgreiche Schlüsseleinigung zwischen Alice und Bob 
+zu torpedieren oder sogar zu verhindern.
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-3-q0.png}
+		\caption{\textit{quant0}}
+		\label{fig:4.14}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-3-q1.png}
+		\caption{\textit{quant1}}
+		\label{fig:4.15}
+\end{figure}
+
+\clearpage
+
+\subsection*{Eigener Angriff}
+Text folgt
+
+\begin{comment}
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-4.png}
+		\caption{\textit{Vierfach gefaltete Alufolie}}
+		\label{fig:4.1x}
+\end{figure}	
+\end{comment}
