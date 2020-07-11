@@ -1,5 +1,8 @@
 \section{Angriffe}
 
+Das komplette Material zur vierten Aufgabe kann 
+\href{https://mega.nz/file/eowBnR7S#zkweNT06YMPYXd2LO1Fy8ez1JB2mdKL_-5aUbluQVcU}
+{hier} runtergeladen werden.
 
 \subsection*{Eavsdropping Attack}
 
@@ -14,10 +17,9 @@ python konk_data.py -A 1_ohneBwg_A_B.csv 2_mBwg_A_B.csv 3.a_mBwg_A_B.csv
 5_mBwg_E_A.csv
 \end{python}
 
-Die Ausgaben namens \textit{A.csv}, \textit{B.csv} und 
-\textit{E.csv} können
-\href{https://mega.nz/file/Kt5xBZAB#WRGFcohI7XJrf5DPk1q67PtrjdRBoHcYXyj7-F8Ai3g}
-{hier} runtergeladen werden.\\~\\
+
+
+
 
 Folgende Befehle wurden zum Testen des Frameworks benutzt.
 
@@ -27,10 +29,6 @@ python physec_praktikum.py -A A.csv -B B.csv -E E.csv -X 2 -Q 0
 python physec_praktikum.py -A A.csv -B B.csv -E E.csv -X 2 -Q 1
 \end{python}
 
-Die Ausgaben des Frameworks können 
-\href{https://mega.nz/file/iooRSRaT#bSVf5SFQHdotoiB_lNudiWK0QEkD0q-4O-qF6iZUipo}
-{hier}
-runtergeladen werden.\\
 
 
 
@@ -142,24 +140,20 @@ python konk_data.py -A 3.a_mBwg_A_B.csv 3.a_ohneBwg_A_B.csv 3.b_mBwg_A_B.csv
 		\label{fig:4.9}
 \end{figure}
 
-\subsubsection*{Resümee: Eavsdropping Attack}
+
 
 \glqq Gibt es einen Zusammenhang zwischen dem Verwendeten
-Quantisierer und der Stärke des Angreifers?\grqq\\
-
+Quantisierer und der Stärke des Angreifers?\grqq
 Wie Abbildungen~\ref{fig:4.4} und ~\ref{fig:4.5} zeigen, 
-bietet der  \textit{quant0} beziehungsweise 
-\textit{mean quantizer} dem Angreifer einen Vorteil.\\
-
+bietet der  \textit{quant0}, also der 
+\textit{mean quantizer} dem Angreifer einen leichten Vorteil,
+zumindest, wenn die Bedingungen gut sind.
 \glqq Welche Rolle spielt die Entfernung des Angreifers 
-zu Alice/Bob\grqq\\
-
+zu Alice/Bob\grqq
 In Abbildungen~\ref{fig:4.8} und ~\ref{fig:4.9} ist klar zu 
-erkennen, dass zunehmende Distanz einen Angreifer 
-benachteiligt.\\
-
-\glqq Welche Rolle spielt die Bewegung im Raum?\grqq\\
-
+erkennen, dass zunehmende Distanz einen Angreifer klar
+benachteiligt.
+\glqq Welche Rolle spielt die Bewegung im Raum?\grqq
 Bewegung im Raum benachteiligt den Angreifer. Die 
 Wirkung davon sieht man in Abbildungen~\ref{fig:4.4} 
 und~\ref{fig:4.5}.
@@ -172,7 +166,7 @@ auszunutzen, siehe Beispiel Modelleisenbahn.
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=1\textwidth ]
+		\includegraphics[width=0.65\textwidth ]
 		{Bilder/a4-2.png}
 		\caption{\textit{Signalstärkenverlauf}}
 		\label{fig:4.10}
@@ -181,7 +175,7 @@ auszunutzen, siehe Beispiel Modelleisenbahn.
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=0.7\textwidth ]
+		\includegraphics[width=0.65\textwidth ]
 		{Bilder/a4-2-q0.png}
 		\caption{\textit{quant0}}
 		\label{fig:4.11}
@@ -190,12 +184,12 @@ auszunutzen, siehe Beispiel Modelleisenbahn.
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=0.7\textwidth ]
+		\includegraphics[width=0.65\textwidth ]
 		{Bilder/a4-2-q1.png}
 		\caption{\textit{quant1}}
 		\label{fig:4.12}
 \end{figure}
-\clearpage
+
 
 Es sind Muster zu erkennen, wobei 
 Eves Muster eigentlich noch gleichmäßiger wäre,
@@ -211,10 +205,28 @@ unter anderem die Periode richtig schätzen.
 
 \begin{figure}[hbt!]
 	\centering
-		\includegraphics[width=1\textwidth ]
+		\includegraphics[width=0.65\textwidth ]
 		{Bilder/a4-3.png}
 		\caption{\textit{Signalstärkenverlauf}}
 		\label{fig:4.13}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.65\textwidth ]
+		{Bilder/a4-3-q0.png}
+		\caption{\textit{quant0}}
+		\label{fig:4.14}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.65\textwidth ]
+		{Bilder/a4-3-q1.png}
+		\caption{\textit{quant1}}
+		\label{fig:4.15}
 \end{figure}
 
 Betrachtet man Abbildungen~\ref{fig:4.14} und 
@@ -225,36 +237,63 @@ Entropie zwischen Alice und Bob möglichst weit zu
 reduzieren. Alternativ könnte man diesen Angriff als 
 \textit{denial-of-service-Attacke} nutzen um eine
 erfolgreiche Schlüsseleinigung zwischen Alice und Bob 
-zu torpedieren oder sogar zu verhindern.
-
-\begin{figure}[hbt!]
-	\centering
-		\includegraphics[width=0.7\textwidth ]
-		{Bilder/a4-3-q0.png}
-		\caption{\textit{quant0}}
-		\label{fig:4.14}
-\end{figure}
-
-
-\begin{figure}[hbt!]
-	\centering
-		\includegraphics[width=0.7\textwidth ]
-		{Bilder/a4-3-q1.png}
-		\caption{\textit{quant1}}
-		\label{fig:4.15}
-\end{figure}
-
+zu torpedieren oder sogar zu verhindern. Hier ist
+\textit{quant1} deutlich besser, im Sinne von, dass sich
+die Quantiserung von Alic und Bob mehr ähneln.
 \clearpage
 
 \subsection*{Eigener Angriff}
-Text folgt
 
-\begin{comment}
+Idee: Benutze Alufolie und Eisengusspfannen um zu sorgen, dass
+Bob möglichst schwach empfängt.
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-4-foto1.jpg}
+		\caption{\textit{Vielfach mit Alufolie umwickelt}}
+		\label{fig:4.16}
+\end{figure}	
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-4-foto2.jpg}
+		\caption{\textit{Sakrophag aus Pfannen}}
+		\label{fig:4.17}
+\end{figure}	
+
 \begin{figure}[hbt!]
 	\centering
 		\includegraphics[width=0.7\textwidth ]
 		{Bilder/a4-4.png}
-		\caption{\textit{Vierfach gefaltete Alufolie}}
-		\label{fig:4.1x}
-\end{figure}	
-\end{comment}
+		\caption{\textit{Signalstärkenverlauf}}
+		\label{fig:4.18}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-4-q0.png}
+		\caption{\textit{quant0}}
+		\label{fig:4.18}
+\end{figure}
+\clearpage
+
+
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=0.7\textwidth ]
+		{Bilder/a4-4-q1.png}
+		\caption{\textit{quant1}}
+		\label{fig:4.19}
+\end{figure}
+
+Möglichweise ist es machbar, wenn man diesen Angriff
+noch etwas ausfeilt, dass am Ende nur noch Nullen 
+quantisiert werden und somit die Schlüsselgenerierung 
+manipuliert werden kann. Ansonsten ist es als
+\textit{denial-of-service-Attacke} einsetzbar.
+Wie zuvor auch, ist hier \textit{quant1} etwas 
+besser.
