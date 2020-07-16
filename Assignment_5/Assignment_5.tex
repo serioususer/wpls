@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{txfonts} %Times New Roman Font
+\usepackage{titlesec} %Format der Headings ändern
+\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage{pythonhighlight}
+
+\renewcommand{\thesection}{\arabic{section}.} %Nummerierung der Sections anpassen
+\renewcommand{\labelenumi}{\alph{enumi})}  %Nummerierung der Listen anpassen
+%\titleformat{\section}{\large\bfseries}{\thesection}{0.5em}{} %Format der Section Überschrift ändern
+\setlength{\parindent}{0pt} %Keine Einrückung bei neuen Paragraphen
+\geometry{left=2.0cm,textwidth=17cm,top=2.5cm,textheight=23cm}
+
+% Anpassen %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\student}{Daniel Pantjuskin-Moos\\ 108013248222 } % Namen eintragen
+\newcommand{\partner}{Vincent König\\ 108011232630} % Matrikelnummer eintragen
+\newcommand{\group}{D} % Gruppennummer eintragen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\hwheadtwo}{$ $
+  \vspace{-2cm}
+  
+\noindent \student \qquad \qquad  Wireless Physical Layer Security Praktikum \hfill SS 2020 \\
+\noindent \partner \\
+%\noindent \thirdone \\  % einkommentieren, falls ihr eine 3er Gruppe seid
+\noindent Gruppe:~\group\\
+$ $
+
+  
+\begin{center}    
+{\Large \bf Abgabe PHYSEC 4}
+\end{center}
+}
+
+\begin{document}
+\hwheadtwo
+
+\renewcommand{\thesection}{\arabic{section}}
+\input{Aufgabe1.tex}
+\newpage
+\input{Aufgabe1.1.tex}
+\newpage
+\input{Aufgabe1.2.tex}
+\newpage
+\input{Aufgabe1.3.tex}
+\newpage
+\input{Aufgabe1.4.tex}
+\newpage
+\input{Aufgabe2.tex}
+
+\begin{comment}
+% Beispiel für einen Hyperlink 	
+\href{https://www.rub.de}{hier klicken}
+
+% Beispiel für Bilder mit Caption und Referenz
+\begin{figure}[hbt!]
+	\centering
+		\includegraphics[width=1\textwidth ]
+		{Bilder/a3_rtl_sdr.jpg}
+		\caption{Hier Caption einfügen}
+		\label{fig:Labelx}
+\end{figure}
+
+% Als Beispiel wie man referenziert
+~\ref{fig:Labelx}
+
+% Beispiel für das Einfügen von Python Code
+\begin{python}
+print("Hello World")
+\end{python}
+
+% Beispiel für das Erzwingen von Abstand (selbe Zeile)
+\hspace{0.5mm}
+
+% Beispiel für das Erzwingen von Abstand (nach unten)
+\\[0.7cm]
+
+%Beispiel für einen Pseudocode
+\subsection*{b) Pseudocode}
+\begin{algorithm}
+\caption{Pseudocode}
+\begin{algorithmic}[1]
+\State $range = max[RSS] - min[RSS]$
+\State $N \in [0, log_2 RSS]$
+\State $M = 2^N$
+\State $RSS[] \to M$ intervalls $I[]$ of equal size
+\State Choose $N$ bit assignment $\forall$ $M$ intervalls
+\For{$t \to len(RSS[])$}
+\For{$i \to len(I[]$}
+\If{$RSS[t] \in I[i]$}
+\State $bitstream \gets$ bit assignment
+\EndIf
+\EndFor
+\EndFor\\
+\Return $bitstream$
+\end{algorithmic}
+\end{algorithm}
+
+% Beispiel für ein Tabelle mit vergrößerter Schrift
+\Large
+\begin{tabular}{ |p{3cm}|||p{3cm}|p{3cm}||p{3cm}|p{3cm}|}
+    \hline
+    \multicolumn{5}{|c|}{Teilaufgabe 1: $A\rightarrow B$} \\
+    \hline
+    Blockgröße & Mittel Bob & Median Bob & Mittel Eve & Median Eve\\
+    \hline
+    \hspace{3.2mm}30 & 0.2290 & 0.1756 & 0.1798 & 0.1428\\
+    100 & 0.2219 & 0.1848 & 0.1341 & 0.1053\\
+    200 & 0.2401 & 0.2377 & 0.0946 & 0.0748\\
+    250 & 0.2591 & 0.2328 & 0.1495 & 0.1260\\
+    300 & 0.2791 & 0.2108 & 0.1784 & 0.1130\\
+    \hline
+\end{tabular}
+\normalsize
+
+% Öffnende und schließende deutsche Anführungszeichen
+\glqq Zitierter Text komm hierhin \grqq  
+
+
+
+\end{comment}
+
+\end{document}
