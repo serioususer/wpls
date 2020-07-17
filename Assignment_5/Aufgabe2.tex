@@ -1,1 +1,112 @@
 \section{Reading Assignment}
+
+\begin{itemize}
+    \item Wie groß muss die effektive 
+    Bandbreite beim \textit{Indoor Positioning} 
+    sein um 1cm genaue Positionen bestimmen 
+    zu können? Was ist das Problem mit 
+    handelsüblichen WLAN APs?\\
+
+    \glqq When the effective bandwidth reaches 
+    360 MHz, the region of ambiguity shrinks to 
+    a ball with an approximately 1-cm radius,
+    which indicates centimeter-level accuracy.
+    Unfortunately, the bandwidths on mainstream 
+    802.11n Wi-Fi chips are merely 20 or 40 MHz, 
+    insufficient for centimeter-level indoor 
+    positioning.\grqq\\
+    Die effektive Bandbreite muss also 360 Mhz 
+    betragen um diese Genauigkeit erreichen zu 
+    können, jedoch haben gewöhnliche Wi-Fi Chips 
+    nur eine Bandbreite  von 20 bis 40 MHz.\\[1mm]
+
+    \item Welche Phasen müssen durchlaufen 
+    werden, damit \textit{Wireless Event Detection}
+    stattfinden kann?
+    Beschreiben Sie diese kurz.
+
+
+    Phase 1: Offline training\\
+    Für jedes indoor event wird die dazugehörige CSI 
+    mithilfe von \textit{Channel Probing} erlangt. Daraus wird
+    eine Matrix gebildet.
+    
+
+    Phase 2: Online testing\\
+    Das Ziel eines TRIEDS ist das Auftreten jedes \textit{
+    Training Indoor Events} zu ermitteln und zwar mithilfe 
+    der Auswertung der Ähnlichkeit der CSI im Testlauf und
+    im Trainingslauf, welche in der Training-Datenbank 
+    \( \mathcal{G} \) gespeichert sind.
+    Die unverarbeiteten CSI-Daten, welche durch 
+    Radiogeräte gewonnen wurden, sind komplex-wertig 
+    und stark multidimensional, was die Verarbeitung 
+    deutlich erschwert.\\[1mm]
+
+    \item Welche physikalischen Eigenschaften eines 
+    Menschen beeinflussen unter anderem die Human
+    Radio Biometrics und weshalb sind sie ungeeignet 
+    als Messwerte?
+
+    \glqq According to the literature, the wireless 
+    propagation pattern around a human body depends
+    highly on individual physical characteristics
+    (e.g., height and mass), the total body water 
+    volume, the skin condition, and the characteristics 
+    of other biological tissues\grqq
+
+    Physikalische Eigenschaften des Körpers wie 
+    Körpergröße, Gewicht, Wasseranteil und Zustand 
+    der Haut beeinflussen \textit{Human Radio 
+    Biometrics}.\\[1mm]
+
+    \glqq However, the human body may affect only a 
+    few paths of the multipath CSI, and the energy 
+    of those paths is small because of the low 
+    reflectivity and permittivity compared with 
+    other static objects, such as the walls and 
+    furniture. As a result, human radio biometrics
+    captured through radio shot are buried in the 
+    CSI by other useless components.\grqq
+    
+    Es stellt sich heraus, dass aufgrund der geringen
+    Reflexivität und Permeabilität des menschlichen 
+    Körpers im Vergleich zu anderen statischen Objekten 
+    wie Wänden und Möbeln die CSI-Pfade eine geringe 
+    Energie haben. Das hat zur Folge, dass durch Radio 
+    aufgenommene \textit{Human Radio Biometrics} von anderen, 
+    nutzlosen Komponenten (nahezu) übertüncht werden.
+
+    \item Erläutern sie in eigenen Worten, wie die beiden 
+    erwähnten Methoden des Indoor Trackings
+    funktionieren.\\[1mm]
+
+
+    \textit{Triangulation}\\
+    Bei dieser Methode wird versucht entweder die Distanz 
+    oder den Winkel zwischen dem Gerät und mehreren 
+    \textit{Anchors} zu schätzen. Auf die  Position des 
+    Geräts kann durch geometrische Triangulation 
+    geschlussfolgert werden. Die Distanz kann abgeschätzt 
+    werden, wenn man die empfangenen Pakete hinsichtlich
+    RSSI-Abstieg oder Sendedauer analysiert. Der Winkel 
+    zwischen den Geräten kann extrahiert werden, wenn man 
+    die Eigenschaften der CSI-Werte, die von mehreren 
+    Antennen empfangen wurden, untersucht.\\[1mm]
+    
+    \textit{Fingerprinting}\\
+
+    Bei dieser Methode können die benötigten Eigenschaften
+    entweder von detaillierten CSI-Werten einer bestimmten 
+    Position zu allen \textit{Anchors} in Reichweite oder
+    aus den RSSI-Vektoren entnommen werden.
+    Ein Nachteil ist, dass die \textit{Fingerprint}-Datenbank
+    die zugeordnete \textit{Fingerprints} sammelt vor 
+    Wiederbenutzen aktualisiert werden muss, was eine Folge
+    der Empfindlichkeit auf Umwelteinflüsse ist.
+    Außerdem ist der Rechenaufwand groß und somit auch die 
+    Latenz.
+    \end{itemize}
+
+
+
