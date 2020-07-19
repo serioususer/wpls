@@ -102,9 +102,6 @@ def standardize_per_channel(data):
 
 	# new_data hat hier das Format einer List mit 216.000 Einträgen.
 	# Jeder Eintrag beinhaltet 114 Werte
-
-
-	
 	for h in range(ROWS):
 		channel_vec = split_list(data[h], K)
 		for i in range(K):
@@ -151,6 +148,8 @@ def euclidean_norm_per_channel(data):
 	new_data = []
 	subset = []
 
+    # new_data hat hier das Format einer List mit 216.000 Einträgen.
+	# Jeder Eintrag beinhaltet 114 Werte
 	for h in range(ROWS):
 		channel_vec = split_list(data[h], K)	
 		for i in range(K):
@@ -162,12 +161,6 @@ def euclidean_norm_per_channel(data):
 					subset=[]
 			
 	
-	# new_data=np.array(new_data)
-	# np.reshape(new_data,(COLUMNS, K))
-	# print("euclidean_norm_per_channel not implemented yet")
-	# exit()
-
-	# print(len(new_data))
 	return new_data
 
     
