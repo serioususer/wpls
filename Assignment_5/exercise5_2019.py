@@ -103,10 +103,13 @@ def standardize_per_channel(data):
 	# new_data hat hier das Format einer List mit 216.000 Einträgen.
 	# Jeder Eintrag beinhaltet 114 Werte
 	for h in range(ROWS):
+        # data wird zeilenweise pro Kanal mit je 114 Einträgen aufgeteilt
 		channel_vec = split_list(data[h], K)
 		for i in range(K):
 			channel_vec_mean.append(np.mean(channel_vec[i]))
 			channel_vec_var.append(np.var(channel_vec[i]))
+            # berechne für jeden einzelnen Wert folgendes: 
+            # (Wert-jeweiliges_Kanalmittel)/jeweilige_Kanalvarianz
 			for j in range(CHAN_WIDTH):
 				subset.append(
 					(data[h][i*K+j] - channel_vec_mean[i]) /
@@ -151,9 +154,14 @@ def euclidean_norm_per_channel(data):
     # new_data hat hier das Format einer List mit 216.000 Einträgen.
 	# Jeder Eintrag beinhaltet 114 Werte
 	for h in range(ROWS):
-		channel_vec = split_list(data[h], K)	
+        # data wird zeilenweise pro Kanal mit je 114 Einträgen aufgeteilt
+		channel_vec = split_list(data[h], K) 	
 		for i in range(K):
-			channel_vec_len.append(compute_euclidean_distance(channel_vec[i], np.zeros_like(channel_vec[i])))
+            # berechne Distanz zum Ursprung, also Vektorlänge, vom
+            # jeweiligen Kanalvektor
+			channel_vec_len.append(
+                compute_euclidean_distance(channel_vec[i], np.zeros_like(channel_vec[i]))
+            )
 			for j in range(CHAN_WIDTH):
 				subset.append(data[h][i*K+j]/channel_vec_len[i])
 				if j== (CHAN_WIDTH-1):
