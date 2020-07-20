@@ -1,2 +1,94 @@
 \subsection{Theorie}
-Test
+
+Hierbei wurde sich unter anderem auf dieses 
+\href{https://ieeexplore.ieee.org/stamp/% hier cut gesetzt
+stamp.jsp?tp=&arnumber=6823677} % damit der Link keine
+{Paper (Seite 1132)} %  zu große Zeilenlänge hat
+und diese 
+\href{https://limo.libis.be/primo-explore/%
+fulldisplay?docid=LIRIAS1662210&context%
+=L&vid=Lirias&search_scope=Lirias&tab%
+=default_tab&lang=en_US&fromSitemap=1}
+{Doktorarbeit (Seite 20 ff.)}
+gestützt, welche kostenlos downloadbar sind.
+
+\subsubsection*{Intradistanz}
+\begin{comment}
+VL 5, Folie 36:
+Distance between responses for the same challenges. 
+Shows measurements error
+
+
+Doktorarbeit, S.20:
+A PUF response intra-distance is a random variable
+describing the distance between two PUF responses 
+from the same PUF instance and using
+the same challenge
+
+Paper, S. 1132:
+Intra-PUF variation: Defined as the number of bits
+in a PUF response that vary when an identical
+challenge is repeatedly queried on a given PUF
+device in a changing environment. This variation is
+due to this environmental change as well as 
+statistical noise. As a result, it is commonly 
+represented in the form of a statistical 
+distribution. Intra-PUF variation is a measure of 
+the reproducibility of responses from an individual 
+PUF circuit.
+\end{comment}
+
+Beschreibt die Distanz zwischen den
+\textit{responses} für die selbe \textit{challenge}. 
+Man kann es als Indikator für die Größe des Messfehlers,
+als auch laut dem Paper als Messwert für die 
+Reproduzierbarkeit betrachten. Die Unterschiede entstehen 
+durch Umwelteinflüsse und \textit{statistical noise}.\\
+
+In der Praxis kann dieser Wert, ähnlich wie in der 
+Aufgabe 1.3 bei der Funktion
+\verb|compute_intra_distance| berechnet werden: Erster 
+Wert einer \textit{challenge} wird als Referenz 
+genommen. Anschließend wird der euklidsche Abstand zu 
+allen Werten der selben \textit{challenge} berechnet.
+
+
+\subsubsection*{Interdistanz}
+\begin{comment}
+VL 5, Folie 36:
+Distance between responses for different challenges. 
+Indicates uniqueness of responses.
+
+Doktorarbeit, S. 22:
+A PUF response inter-distance is a random variable 
+describing the distance between two PUF responses 
+from different PUF instances using the same challenge:
+
+
+Paper, S. 1132:
+Inter-PUF variation: Defined as the number of bits
+in a PUF response that vary between different
+devices for a set of shared challenges. This is 
+due to differences between the physical ICs and 
+is also commonly represented in the form of a 
+statistical distribution. The inter-PUF variation 
+is a measure of the uniqueness of an individual 
+PUF circuit
+\end{comment}
+
+Distanz zwischen \textit{responses} für verschiedene 
+\textit{challanges} und Indikator für die Einzigartigkeit 
+der \textit{responses}.\\
+
+In der Praxis, kann es ähnlich wie in der Aufgabe 1.3 
+bei der Funktion \verb|compute_inter_distance| 
+aussehen, wobei man hier die Anzahl der
+zu berechnenden Distanzen gering halten möchte.
+Deswegen beschränkt man sich auf die jeweils ersten 
+Messungen jeder \textit{challange}: Dazu werden alle 
+Distanzen aller Paare, ungeordnet und ohne Zurücklegen, 
+gebildet von den ersten Messungen aller 
+\textit{challanges}, was somit 
+\footnotesize $\binom{40}{2}=780$ \normalsize
+verschiedene Paare sind. 
+
