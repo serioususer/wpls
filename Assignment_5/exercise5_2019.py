@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+
 #----------------------------------------------
 # ------- Hints and Remarks
 # You receive a set of CSI data from the VPoR container setup.
@@ -75,101 +76,59 @@ def print_overlap(intra_overlap, inter_overlap, prepproc_string):
 # Complete functions here
 
 def standardize_per_channel(data):
-	"""
-	Standardize each channel of 114 CSI values of each measurement individually. Do this by subtracting the mean value of the
-	channel from each point and divide it by the channels' variance.
-	Make sure to return a copy of data instead of modifying data directly.
-	Hint: Use vectorization for performance, i.e., perform the standardization for the first channel of all measurements
-			  at the same time. You can calculate the mean and variance with numpy function along an axis.
-	:param data:
-	:return:
-	"""
-	# Folgende Funktion stammt von stackoverflow
-	def split_list(alist, wanted_parts):
-		length = len(alist)
-		return [alist[i*length // wanted_parts: (i+1)*length // wanted_parts]
-				for i in range(wanted_parts)]
-
-	CHAN_WIDTH = 114
-	ROWS = 4000
-	COLUMNS = 6156
-	K = 54  # 54=6156/114
-	channel_vec = []
-	channel_vec_mean= []
-	channel_vec_var = []
-	subset = []
-	new_data = []
-
-	# new_data hat hier das Format einer List mit 216.000 Einträgen.
-	# Jeder Eintrag beinhaltet 114 Werte
-	for h in range(ROWS):
-        # data wird zeilenweise pro Kanal mit je 114 Einträgen aufgeteilt
-		channel_vec = split_list(data[h], K)
-		for i in range(K):
-			channel_vec_mean.append(np.mean(channel_vec[i]))
-			channel_vec_var.append(np.var(channel_vec[i]))
-            # berechne für jeden einzelnen Wert folgendes: 
-            # (Wert-jeweiliges_Kanalmittel)/jeweilige_Kanalvarianz
-			for j in range(CHAN_WIDTH):
-				subset.append(
-					(data[h][i*K+j] - channel_vec_mean[i]) /
-					channel_vec_var[i]
-				)
-				if j == (CHAN_WIDTH-1):
-					new_data.append(list(subset))
-					subset = []
-	#print("standardize_per_channel not implemented yet")
-	# exit()
-	return new_data
+    """
+    Standardize each channel of 114 CSI values of each measurement individually. Do this by subtracting the mean value of the
+    channel from each point and divide it by the channels' variance.
+    Make sure to return a copy of data instead of modifying data directly.
+    Hint: Use vectorization for performance, i.e., perform the standardization for the first channel of all measurements
+          at the same time. You can calculate the mean and variance with numpy function along an axis.
+    :param data:
+    :return:
+    """
+    print("standardize_per_channel...")
+   
+    data_copy = data.copy()
+    new_data = []
+	
+    for measurement in data_copy: 
+	#get channels
+	channels=np.array(np.split(measurement, len(measurement)/114)) 
+	# copied new data in 1D Array
+	new_data.append([ ((chan-mean)/var).flatten() for chan,mean,var in zip(channels, channels.mean(axis=1), channels.var(axis=1)) ])
+    
+    print('sucessful.')
+    return np.array(new_data)
 
 
 def euclidean_norm_per_channel(data):
-	"""
-	Normalize each channel of 114 CSI values of each measurement individually. Do this by dividing each point of the
-	channel by the length of the channel's vector.
-	Make sure to return a copy of data instead of modifying data directly.
-	Hint: One way to compute the length of the vector is to use compute_euclidean_distance(vector_a, np.zeros_like(vector_a)).
-		  This is the distance to the null vector or simple the vector length.
+    """
+    Normalize each channel of 114 CSI values of each measurement individually. Do this by dividing each point of the
+    channel by the length of the channel's vector.
+    Make sure to return a copy of data instead of modifying data directly.
+    Hint: One way to compute the length of the vector is to use compute_euclidean_distance(vector_a, np.zeros_like(vector_a)).
+          This is the distance to the null vector or simple the vector length.
 
-	:param data:
-	:return:
-	"""
-
-	# Folgende Funktion stammt aus stackoverflow
-	def split_list(alist, wanted_parts):
-	    length = len(alist)
-	    return [ alist[i*length // wanted_parts: (i+1)*length // wanted_parts] 
-	             for i in range(wanted_parts) ]
-
-
-	CHAN_WIDTH = 114
-	ROWS = 4000
-	COLUMNS = 6156
-	K = 54 # K = 6156/114 Entspricht Kanäle per Messung
-	channel_vec = []
-	channel_vec_len = []
-	new_data = []
-	subset = []
-
-    # new_data hat hier das Format einer List mit 216.000 Einträgen.
-	# Jeder Eintrag beinhaltet 114 Werte
-	for h in range(ROWS):
-        # data wird zeilenweise pro Kanal mit je 114 Einträgen aufgeteilt
-		channel_vec = split_list(data[h], K) 	
-		for i in range(K):
-            # berechne Distanz zum Ursprung, also Vektorlänge, vom
-            # jeweiligen Kanalvektor
-			channel_vec_len.append(
-                compute_euclidean_distance(channel_vec[i], np.zeros_like(channel_vec[i]))
-            )
-			for j in range(CHAN_WIDTH):
-				subset.append(data[h][i*K+j]/channel_vec_len[i])
-				if j== (CHAN_WIDTH-1):
-					new_data.append(list(subset))
-					subset=[]
-			
+    :param data:
+    :return:
+    """
+    
+    print("euclidean_norm_per_channel...")
+    data_copy = data.copy()
+    new_data = []
+    # len of vector
+    l = lambda vector_a: compute_euclidean_distance(vector_a, np.zeros_like(vector_a))
 	
-	return new_data
+    for measurement in data_copy: 
+	channels=np.array(np.split(measurement, len(measurement)/114))
+	new_data.append([ (chan/l(chan)).flatten() for chan in channels ])
+
+
+    print('sucessful.')
+    return np.array(new_data)
+
+	
+    
+ 
 
     
 def compute_intra_distance(data, num_challenges):
@@ -184,10 +143,16 @@ def compute_intra_distance(data, num_challenges):
     :return: numpy vector containing all intra distances
     """
 
-    print("compute_intra_distance not implemented yet")
-    exit()
+    print("compute_intra_distance...")
+    data_copy = data.copy()
+
+    challenges = np.split(data_copy, num_challenges)
+    intra_distances = [compute_euclidean_distance(challenge[0],measurement) 
+                       for challenge in challenges
+                       for measurement in challenge[1:]]
     
-    # return np.array(intra_distances)
+    print('sucessful.')
+    return np.array(intra_distances)
 
 
 def compute_inter_distance(data, num_challenges):
@@ -202,10 +167,18 @@ def compute_inter_distance(data, num_challenges):
     :return: numpy vector containing all inter distances
     """
 
-    print("compute_inter_distance not implemented yet")
-    exit()
-    
-    # return np.array(inter_distances)
+    print("compute_inter_distance...")
+    data_copy = data.copy()
+
+    challenges = np.split(data_copy, num_challenges)
+    inter_distances = [compute_euclidean_distance(chall[0],measurement)
+                       for i,chall in enumerate(challenges)
+                       for j,subchall in enumerate(challenges)
+                       if subchall is not chall
+                       for measurement in subchall[0 if i<j else 1:]]
+
+    print('sucessful.')
+    return np.array(inter_distances)
 
 
 # ---------------------------------------------
@@ -302,3 +275,4 @@ if __name__ == '__main__':
     print_overlap(std_freq_intra_overlap_perc, std_freq_inter_overlap_perc, 'Standardization Per Frequency Bin')
 
 
+    raw_input('Press ENTER to exit...')
