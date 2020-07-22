@@ -96,7 +96,7 @@ def standardize_per_channel(data):
 	# copied new data in 1D Array
 	new_data.append([ ((chan-mean)/var).flatten() for chan,mean,var in zip(channels, channels.mean(axis=1), channels.var(axis=1)) ])
     
-    print('sucessful.')
+    print('successful.')
     return np.array(new_data)
 
 
@@ -123,7 +123,7 @@ def euclidean_norm_per_channel(data):
 	new_data.append([ (chan/l(chan)).flatten() for chan in channels ])
 
 
-    print('sucessful.')
+    print('successful.')
     return np.array(new_data)
 
 	
@@ -151,7 +151,7 @@ def compute_intra_distance(data, num_challenges):
                        for challenge in challenges
                        for measurement in challenge[1:]]
     
-    print('sucessful.')
+    print('successful.')
     return np.array(intra_distances)
 
 
@@ -177,7 +177,7 @@ def compute_inter_distance(data, num_challenges):
                        if subchall is not chall
                        for measurement in subchall[0 if i<j else 1:]]
 
-    print('sucessful.')
+    print('successful.')
     return np.array(inter_distances)
 
 
