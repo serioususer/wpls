@@ -1,4 +1,5 @@
 \subsection{Implementierung}
+
 \begin{python}
 def standardize_per_channel(data):
 	print("standardize_per_channel...")
@@ -15,7 +16,11 @@ def standardize_per_channel(data):
 	return np.array(new_data)
 \end{python}
 
+\hfill \break
+\hfill \break
+
 \begin{python}
+
 def euclidean_norm_per_channel(data):
 	print("euclidean_norm_per_channel...")
 	data_copy = data.copy()
@@ -46,6 +51,9 @@ def compute_intra_distance(data, num_challenges):
 	print('sucessful.')
 	return np.array(intra_distances)
 \end{python}
+
+\hfill \break
+\hfill \break
 
 \begin{python}
 def compute_inter_distance(data, num_challenges):
