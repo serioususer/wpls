@@ -39,19 +39,19 @@ PUF circuit.
 \end{comment}
 
 Beschreibt die Distanz zwischen den
-\textit{responses} für die selbe \textit{challenge}. 
+\textit{Responses} für die selbe \textit{Challenge}. 
 Man kann es als Indikator für die Größe des Messfehlers,
 als auch laut dem Paper als Messwert für die 
 Reproduzierbarkeit betrachten. Die Unterschiede entstehen 
-durch Umwelteinflüsse und \textit{statistical noise}.\\
+durch Umwelteinflüsse und \textit{statistical Noise}.\\
 
 In der Praxis kann dieser Wert, ähnlich wie in 
 den Kommentaren zu \verb|compute_intra_distance| 
 von Aufgabe 1.3 beschrieben, berechnet werden: Die
-erste Messung einer \textit{challenge} wird als Referenz 
+erste Messung einer \textit{Challenge} wird als Referenz 
 genommen. Anschließend wird der euklidsche Abstand zu 
-allen Messungen der selben \textit{challenge} berechnet.
-Das wird für alle \textit{challenges} wiederholt.
+allen Messungen der selben \textit{Challenge} berechnet.
+Das wird für alle \textit{Challenges} wiederholt.
 
 
 \subsubsection*{Interdistanz}
@@ -77,19 +77,22 @@ is a measure of the uniqueness of an individual
 PUF circuit
 \end{comment}
 
-Distanz zwischen \textit{responses} für verschiedene 
-\textit{challanges} und Indikator für die Einzigartigkeit 
-der \textit{responses}.\\
+Distanz zwischen \textit{Responses} für verschiedene 
+\textit{Challenges} und laut dem Paper ein Indikator 
+für die Einzigartigkeit eines \textit{PUF circuit}
+beziehungsweise laut Vorlesung 5, Folie 36 ein Indikator
+für die Einzigartigkeit der \textit{responses}.\\ 
+
 
 In der Praxis, kann es ähnlich wie in der Aufgabe 1.3 
 bei der Funktion \verb|compute_inter_distance| 
 aussehen, wobei man hier die Anzahl der
 zu berechnenden Distanzen gering halten möchte.
 Deswegen beschränkt man sich auf die jeweils ersten 
-Messungen jeder \textit{challange}: Dazu werden alle 
+Messungen jeder \textit{Challenge}: Dazu werden alle 
 Distanzen aller Paare, ungeordnet und ohne Zurücklegen, 
 gebildet von den ersten Messungen aller 
-\textit{challanges}, was somit 
+\textit{Challenges}, was somit 
 \footnotesize $\binom{40}{2}=780$ \normalsize
 verschiedene Paare sind. 
 
