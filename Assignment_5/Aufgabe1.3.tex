@@ -1,2 +1,64 @@
 \subsection{Implementierung}
-Test
+\begin{python}
+def standardize_per_channel(data):
+	print("standardize_per_channel...")
+	data_copy = data.copy()
+	new_data = []
+	
+	for measurement in data_copy: 
+		#get channels
+		channels=np.array(np.split(measurement, len(measurement)/114)) 
+		# copied new data in 1D Array
+		new_data.append([ ((chan-mean)/var).flatten() for chan,mean,var in zip(channels, channels.mean(axis=1), channels.var(axis=1)) ])
+    
+	print('sucessful.')
+	return np.array(new_data)
+\end{python}
+
+\begin{python}
+def euclidean_norm_per_channel(data):
+	print("euclidean_norm_per_channel...")
+	data_copy = data.copy()
+	new_data = []
+	
+	# len of vector
+	l = lambda vector_a: compute_euclidean_distance(vector_a, np.zeros_like(vector_a))
+	
+	for measurement in data_copy: 
+		channels=np.array(np.split(measurement, len(measurement)/114))
+		new_data.append([ (chan/l(chan)).flatten() for chan in channels ])
+
+
+	print('sucessful.')
+	return np.array(new_data)
+\end{python}
+\newpage
+\begin{python}    
+def compute_intra_distance(data, num_challenges):
+	print("compute_intra_distance...")
+	data_copy = data.copy()
+
+	challenges = np.split(data_copy, num_challenges)
+	intra_distances = [compute_euclidean_distance(challenge[0],measurement) 
+                       for challenge in challenges
+                       for measurement in challenge[1:]]
+    
+	print('sucessful.')
+	return np.array(intra_distances)
+\end{python}
+
+\begin{python}
+def compute_inter_distance(data, num_challenges):
+	print("compute_inter_distance...")
+	data_copy = data.copy()
+
+	challenges = np.split(data_copy, num_challenges)
+	inter_distances = [compute_euclidean_distance(chall[0],measurement)
+                       for i,chall in enumerate(challenges)
+                       for j,subchall in enumerate(challenges)
+                       if subchall is not chall
+                       for measurement in subchall[0 if i<j else 1:]]
+
+	print('sucessful.')
+	return np.array(inter_distances)
+\end{python}
